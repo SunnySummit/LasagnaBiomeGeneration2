@@ -1,5 +1,5 @@
 # lasagna biome generation 2
-by goosetehmoose
+by goosetehmoose aka sunnysummit
 
 **compatible with:** worlds part 1
 
