@@ -9,8 +9,6 @@ you might encounter issues with huge rocks. use custombiomes_med if it really bo
 
 i recommend installing all paks that start with three underscores, the others are optional.
 
-paks are provided as is.
-
 feel free to make your own changes. in order to distribute you must:
 1. provide full credits in a readme file included with the archive.
 2. use open (GPLv3) licensing and/or open nexus mods permissions (include these 4 points in the readme/description page).
@@ -18,6 +16,8 @@ feel free to make your own changes. in order to distribute you must:
 4. you cannot distribute this mod for other games or media besides No Man's Sky.
 
 credits can be found in the archive.
+
+paks are provided as is.
 
 ---
 # download instructions
