@@ -18,7 +18,7 @@ paks are provided as is.
 credits can be found in the archive:
 
 ---
-## download instructions
+# download instructions
 navigate to the 'Releases' tab ([or click here](https://github.com/SunnySummit/Lasagna_Biome_Generation_2/releases)) and download the latest .zip file
 
 ---
@@ -28,7 +28,7 @@ navigate to the 'Releases' tab ([or click here](https://github.com/SunnySummit/L
 
 [plumgen](https://github.com/SunnySummit/PLUMGEN/releases) - **biome generation app.**
 
-## albums:
+# albums
 
 1. [image dump 1](https://imgur.com/a/7i6oG51)
 
