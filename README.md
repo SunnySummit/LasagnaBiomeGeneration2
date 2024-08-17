@@ -1,5 +1,5 @@
 # lasagna biome generation 2
-by goosetehmoose aka sunnysummit
+*by goosetehmoose aka sunnysummit*
 
 A giant planet generation mod for No Man's Sky. Includes PAK mods & LUA scripts.
 
