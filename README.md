@@ -18,9 +18,8 @@ paks are provided as is.
 credits can be found in the archive:
 
 ---
-1. [Google drive](https://drive.google.com/file/d/1N2s99EMmFnYfxMJRrg8X7MNc5pjqC5DZ/view?usp=sharing)
-
-2. [mega (mirror)](https://mega.nz/file/c25nlLiQ#ou0KIs14CEIMnq7wXL2eKilziVp1Qmmcgn9QiDS4hdk)
+## download instructions
+navigate to the 'Releases' tab ([or click here](https://github.com/SunnySummit/Lasagna_Biome_Generation_2/releases)) and download the latest .zip file
 
 ---
 [virustotal report](https://www.virustotal.com/gui/file/1bac57d6930cc78d5a838489194c5ddd0fb984b31b5e4dac8f88cf7dfdbd3ced/detection)
