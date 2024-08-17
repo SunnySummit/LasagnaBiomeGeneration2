@@ -7,11 +7,9 @@ by goosetehmoose aka sunnysummit
 
 ![thumbnail](https://i.imgur.com/brZBg1X.jpeg)
 
-paks are too large for github.
+i recommend installing all paks that start with three underscores.
 
-the latest paks are available on google drive and mega.
-
-install all paks that start with three underscores.
+the others are optional.
 
 paks are provided as is.
 
