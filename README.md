@@ -7,7 +7,7 @@ by goosetehmoose aka sunnysummit
 
 you might encounter issues with huge rocks. use custombiomes_med if it really bothers you.
 
-i recommend installing all paks that start with three underscores, the others are optional.
+i recommend installing all paks that start with three underscores.
 
 feel free to make your own changes. in order to distribute you must:
 1. provide full credits in a readme file included with the archive.
