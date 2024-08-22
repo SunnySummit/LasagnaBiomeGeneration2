@@ -428,7 +428,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGESUMMEREGG.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 60, 0.8, 3, 0.9, 1.1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.132, 0.0066, 0.0066, 2), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/HYDROPOD.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 45, 1.35, 3.45, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0009, 0.0009, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -477,7 +476,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/SPIKYPOTATO.SCENE.MBIN", "FLORACLUMPX", 1, 128, 0, 180, 1.5, 5.25, 0.9, 1.1, 0, 20, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.3, 0.05, 0.05, 3), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/SCORCHED/LARGE/LARGESPIRE.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 1.36, 3.2, 1, 1, 0, 6, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.05, 0.01088, 0.017, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/ARRAYTWIST.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 360, 1.2, 2.1, 1, 1, 0, 360, 180, 0, -2, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0072, 0.0036, 2), }, --## 3d_biome_obj
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/ARRAYTWIST.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 360, 1.2, 2.1, 1, 1, 0, 360, 180, 0, -2, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0032, 0.0036, 2), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_10_HUGE_ROCKY_LUSH_FROZEN.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_110_WEIRD_LUSH.MBIN"}, }, --## 3a1_biome
@@ -512,7 +511,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/ROCKY/ISLANDSPIKEHUGE.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 180, 1, 2, 1, 1, 0, 0, 180, 55, 0, "FALSE", "FALSE", "TRUE", "FALSE", 0.0001, 0.04, 0.04, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/SPINDLESUMMER.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 80, 0.6, 2.2, 0.85, 1.15, 0.5, 15, 180, 55, 0, "TRUE", "TRUE", "TRUE", "TRUE", 0.198, 0.0033, 0.00462, 3), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/FROZENPILLARS/LARGEPILLAR.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 1.28, 2.56, 0.9, 1.1, 0.5, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0096, 0.015, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -539,7 +537,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/LARGESNOWBLENDROCK.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 2.25, 4.5, 0.8, 1.2, 0, 45, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.1, 0.0585, 0.036, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LAVA/MEDIUMPROPS/MEDIUMVOLCANICROCKS.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.6, 1.2, 1, 1, 0, 0, 180, 55, 0, "FALSE", "FALSE", "TRUE", "FALSE", 0.4, 0.000128, 0.0002, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGESUMMEREGG.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 45, 1.2, 3, 0.9, 1.1, 0, 0, 180, 0, -2, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.009, 0.009, 2), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_116_HUGE_BURNT_WEIRD_BARREN.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_117_NOXIOUS_SCORCHED_FROZEN.MBIN"}, }, --## 3a1_biome
@@ -562,7 +559,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGEEGGHOLDER.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 60, 3, 8.8, 1, 1, 0, 5, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.198, 0.0033, 0.0033, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/PLANTS/LARGEPLANT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 80, 0.6, 8, 1, 1, 0.74, 6, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0045, 0, 4), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -578,8 +574,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTTENDRILS.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 60, 1, 5.5, 1, 1, 0.2, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.132, 0.0198, 0.0132, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/ARRAYTWIST.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.64, 1.12, 1, 1, 0, 360, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.5, 0.00512, 0.004, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/ARRAYTWIST.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.64, 1.12, 1, 1, 0, 360, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.5, 0.00212, 0.004, 2), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/BARREN/ROCKS/LARGEROCK.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 1.12, 1.6, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0064, 0.01, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -587,7 +582,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGESUMMEREGG.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.64, 1.6, 0.9, 1.1, 0, 0, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.0064, 0.01, 2), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/BARREN/HQ/TREES/DRACAENA.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 35, 2.4, 3, 1, 1, 0.3, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.23, 0.009, 0.009, 1), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -597,7 +591,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/BARREN/HQ/CORAL/LARGECORALSAND.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 3.5, 6, 1, 1, 0.8, 15, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.005, 0.005, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/TOXIC/LARGE/TENDRIL.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 60, 1.5, 3, 1, 1, 0, 10, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.165, 0.063, 0.063, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/ARRAYTWIST.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.64, 1.12, 1, 1, 0, 360, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.00512, 0.004, 2), }, --## 3d_biome_obj
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/ARRAYTWIST.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.64, 1.12, 1, 1, 0, 360, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.00212, 0.004, 2), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_122_WEIRD_LUSH.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_123_NOXIOUS.MBIN"}, }, --## 3a1_biome
@@ -622,7 +616,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/TOXIC/LARGE/TENDRIL.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 45, 0.16, 0.8, 1, 1, 0.1, 0, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.09, 0.0225, 0.04, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/SPIKYPOTATO.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 2, 3.6, 1, 1, 0.5, 15, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.0192, 0.03, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTROCKLIFTED.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 45, 0.64, 0.96, 1, 1, 0, 8, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0039375, 0.007, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_125_IRRADIATED_BARREN.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_126_FROZEN_WEIRD.MBIN"}, }, --## 3a1_biome
@@ -639,14 +632,13 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/FROZEN/LARGEPROPS/LARGETREE.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 50, 3.75, 4.5, 1, 1, 0, 10, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.25, 0.0011, 0.0022, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/CRYSTALSSHAPE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 80, 1, 54, 1, 1, 0, 15, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.156, 0.0013, 0.0013, 3), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/COMMODITYPLANT.SCENE.MBIN", "BIGHAZCROP", -1, 128, 0, 50, 0.3, 0.6, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.25, 0.25, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_127_FROZEN_LIVINGSHIP_WEIRD.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_128_LUSH_BARREN_RADIOACTIVE.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGEEGG.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.8, 1.2, 1, 1, 0, 0, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.00192, 0.001, 1), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/HQLUSH/LARGEPROPS/MOSSCOVEREDWEIRDPROP.SCENE.MBIN", "JAMESPATCHX", -1, 128, 0, 60, 2.4, 5.5, 1, 1, 0, 15, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.132, 0.00132, 0.00066, 1), }, --## 3b_biome_dist
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_128_LUSH_BARREN_RADIOACTIVE.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_129_LIVINGSHIP_RADIOACTIVE_WEIRD.MBIN"}, }, --## 3a1_biome
@@ -654,7 +646,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LUSHROOM/LARGEBLUESHROOMSINGLE.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 3.6, 4.8, 0.9, 1.1, 0, 8, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.1, 0.0064, 0.01, 2), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/BIOMESPECPLANTS/BARRENPLANT.SCENE.MBIN", "BIOMEPLANT", -1, 128, 0, 60, 2, 24, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 40, 0.04, 0.04, 0), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/RADIOACTIVE/LARGE/LARGEGLOWPLANT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 2.5, 70, 1, 1, 0.75, 5, 180, 0, -2, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.00295, 0.00295, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -662,7 +653,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGEEGG.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.8, 1.2, 1, 1, 0, 0, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.00192, 0.001, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/RADIOACTIVE/LARGE/RADIOACTIVETREE.SCENE.MBIN", "BARRENROCKCLUMX", -1, 128, 0, 55, 2.55, 4.05, 1, 1, 0, 6, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.18, 0.033, 0.033, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/CONTOURTOWER.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 20, 270, 1, 1, 0, 0, 180, 0, -2, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0132, 0.0132, 3), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
@@ -682,14 +672,12 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/BARREN/HQ/TREES/DRACAENA.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 60, 1.6, 2.3, 1, 1, 0.7, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.1357, 0.0066, 0.0059, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/BARREN/HQ/TREES/DRACAENACOLOURED.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 40, 1, 1.4, 1, 1, 0.5, 5, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.3, 0.02, 0.01, 0.5), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/ARRAYSHELL.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 80, 0.8, 8, 1, 1, 0.74, 8, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.002, 0.002, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_131_LIVINGSHIP.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_132_BARREN_LAVA_FROZEN_WEIRD.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGESUMMEREGG.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 45, 1.2, 3, 0.9, 1.1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.009, 0.009, 2), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/ANENOMESHAPE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 7.5, 12, 1, 1, 0.5, 30, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.3, 0.0028, 0.0028, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/COOKING/JADEPEAS.SCENE.MBIN", "WILDPLANTS", -1, 128, 0, 60, 0.9, 4.2, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.002, 0.002, 0), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
@@ -724,7 +712,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/SPINDLESUMMER.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 45, 0.48, 0.8, 0.85, 1.15, 0.5, 15, 180, 55, 0, "TRUE", "TRUE", "TRUE", "TRUE", 0.3, 0.0028125, 0.007, 3), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/RADIOACTIVE/MEDIUM/MEDIUMGLOWROCK.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 80, 1, 8, 1, 1, 0.74, 15, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.007, 0.007, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -764,7 +751,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/RADIOACTIVE/LARGE/RADIOACTIVETREE.SCENE.MBIN", "ROCKCLUMX", -1, 128, 0, 60, 1.8, 70, 1, 1, 0.75, 6, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.0708, 0.01357, 0.01357, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LAVA/MEDIUMPROPS/MEDSHARDINACTIVE01.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.8, 11, 1, 1, 0.75, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.177, 0.00177, 0.00177, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/FARMSNOW.SCENE.MBIN", "BIOMEPLANTX", -1, 128, 0, 60, 2, 8, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.002, 0.002, 0), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_140_NOXIOUS_LIVINGSHIP_SCORCHED.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_141_WEIRD_HUGE.MBIN"}, }, --## 3a1_biome
@@ -772,7 +758,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/NOXIOUS/LARGE/LARGEPLANT.SCENE.MBIN", "LEVILARGEPATCH", -1, 128, 0, 90, 0.8, 1.5, 1, 1, 0.3, 3, 360, 55, 0, "FALSE", "FALSE", "TRUE", "FALSE", 0.28, 0.009, 0, 3), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTTENDRILS.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 15, 4.5, 6, 1, 1, 0.2, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.009, 0.018, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/SCORCHED/LARGE/LARGESPIRE.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 1.36, 3.2, 1, 1, 0, 6, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.01088, 0.017, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -790,7 +775,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/SCORCHED/LARGE/LARGESHIELDTREE.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.48, 1.6, 0.9, 1.1, 0, 5, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.0032, 0.005, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGEEGG.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 60, 1, 3.3, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.132, 0.00198, 0.00066, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/WIRECELLSMALLBUSH.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 3, 4.5, 1, 1, 0, 90, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.009, 0.009, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -829,8 +813,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/ARRAYTWIST.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.8, 2.1, 1, 1, 0, 360, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.33, 0.00528, 0.00264, 2), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SINGLESUMMER.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 1.5, 2.25, 1, 1, 0, 7, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 2, 0.009, 0.0036, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/ARRAYTWIST.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.8, 2.1, 1, 1, 0, 360, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.33, 0.00228, 0.00264, 2), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/MEDIUMROCK.SCENE.MBIN", "GRASSCLUMP", -1, 128, 0, 40, 2.1, 3.3, 1, 1, 0.2, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0054, 0, 3), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -856,7 +839,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/CONTOURTOWER.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 16, 24, 1, 1, 0, 0, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.1, 0.0128, 0.02, 3), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/BIOMESPECPLANTS/LUSHPLANT.SCENE.MBIN", "BIOMEPLANT", -1, 128, 0, 60, 2, 24, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 40, 0.04, 0.04, 0), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/COOKING/FROZENTUBERS.SCENE.MBIN", "WILDPLANTS", -1, 128, 0, 60, 0.85, 3.3, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.002, 0.002, 0), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -884,14 +866,12 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/ROCKY/LARGEPROPS/ISLANDLARGE.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 180, 1, 2, 1, 1, 0, 0, 180, 55, 0, "FALSE", "FALSE", "TRUE", "FALSE", 0.0001, 0.05, 0.01, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/BURNT/LARGE/LARGETREE.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 5, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.4, 0.09, 0, 5), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/BIOTANK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 80, 0.7, 2.2, 0.9, 1.1, 0.8, 8, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.033, 0.0198, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_153_HUGE_LIVINGSHIP.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_154_NOXIOUS_TOXIC_INDUSTRIAL.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/BIOTANK.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 45, 0.56, 0.8, 0.9, 1.1, 0.8, 8, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.028125, 0.03, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/COOKING/PULPYROOTS.SCENE.MBIN", "WILDPLANTS", -1, 128, 0, 60, 0.5, 0.6, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.002, 0.002, 3), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -952,7 +932,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/FLAMESPLINTER.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 45, 1.5, 2.1, 0.9, 1.1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.16, 0.0108, 0.0108, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/TOXIC/LARGE/TENDRIL.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 45, 0.8, 2.08, 1, 1, 0.3, 0, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.08, 0.005625, 0.01, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/BURST.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 45, 0.4, 1.28, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.01125, 0.02, 3), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
@@ -962,7 +941,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/SWAMP/LARGEPLANT/DEADTREE.SCENE.MBIN", "BARRENROCKCLUMX", -1, 128, 0, 60, 2.85, 4.5, 1, 1, 0.5, 6, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.25, 0.022, 0.022, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/MEDIUMPLANT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 80, 1, 3, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0033, 0.0033, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_161_SUBZERO_FROZEN_LIVINGSHIP.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_162_WEIRD_HUGE_TOXIC.MBIN"}, }, --## 3a1_biome
@@ -971,7 +949,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/SUBZERO/RARE/RARELARGE.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 90, 0.8, 1.8, 1, 1, 0, 0, 360, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.05, 0.01, 0, 3), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/FROZENPILLARS/LARGEPILLAR.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 45, 1.6, 3.2, 0.9, 1.1, 0.5, 5, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.15, 0.015, 0.015, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/MEDIUMPLANT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 80, 1, 3, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0033, 0.0033, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_162_WEIRD_HUGE_TOXIC.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_163_LUSH_FROZEN.MBIN"}, }, --## 3a1_biome
@@ -1022,7 +999,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/TOXIC/LARGE/SPORETREE.SCENE.MBIN", "FLORACLUMPX", -1, 128, 0, 60, 1, 3.96, 1, 1, 0, 10, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 1.32, 0.00528, 0.00264, 2), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SUMMERUMBRELLA.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.45, 1.2, 1, 1, 0, 10, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.0063, 0.0036, 1), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_168_SWAMP_IRRADIATED_FLORAL.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_169_BURNT_LIVINGSHIP_LUSH.MBIN"}, }, --## 3a1_biome
@@ -1038,7 +1014,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/BURNT/RARE/RARELARGE.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 90, 0.8, 1.8, 1, 1, 0, 0, 360, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0, 0.01, 0, 3), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGESUMMEREGG.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 45, 1.2, 3, 0.9, 1.1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.009, 0.009, 2), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LUSHROOM/LARGEBLUESHROOMSINGLE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 60, 4.5, 70, 0.9, 1.1, 0.75, 8, 180, 0, -2, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0059, 0.0059, 2), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -1056,7 +1031,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LUSHROOM/LARGEBLUESHROOM.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 2.8, 3.6, 0.9, 1.1, 0, 4, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.3, 0.0064, 0, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/BIOTANK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 45, 1.05, 1.5, 0.9, 1.1, 0.8, 8, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.035, 0.021, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/HQLUSH/LARGEPROPS/MOUNTAINROCK_1.SCENE.MBIN", "FLORACLUMPX", -1, 128, 0, 15, 1.2, 2.1, 1, 1, 0.2, 25, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.35, 0, 3), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -1091,7 +1065,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/SHAPE1.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 180, 4.5, 7.5, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.1, 0.066, 0.066, 3), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/FROZENPILLARS/LARGEPILLAR.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 60, 0.9, 70, 1, 1, 0.75, 3, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.132, 0.33, 0, 3), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVE/SPOREVENT.SCENE.MBIN", "RESCLUMPCOM", -1, 128, 0, 60, 0.5, 0.6, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.01, 0.01, 0), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_175_WEIRD_SUBZERO.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_176_HUGE_IRRADIATED_FROZEN.MBIN"}, }, --## 3a1_biome
@@ -1140,7 +1113,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/FROZEN/LARGEPROPS/SNOWCOVEREDWEIRDPROP.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 1.5, 1.5, 1, 1, 0, 15, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.3, 0.00225, 0.0009, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/BIOMESPECPLANTS/SCORCHEDPLANT.SCENE.MBIN", "BIOMEPLANT", -1, 128, 0, 60, 2, 24, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 40, 0.04, 0.04, 0), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/TOXIC/LARGE/LARGETOXICEGGSINGLE.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 3.2, 4.8, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.00512, 0.008, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -1164,7 +1136,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/FLAMESPLINTER.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 45, 1.5, 2.1, 0.9, 1.1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.16, 0.0108, 0.0108, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/BONETREEDAMAGED.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 60, 2, 19, 1, 1, 0.75, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.0885, 0.0198, 0.0189, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/SUBZERO/LARGE/LARGEPLANT.SCENE.MBIN", "LEVILARGEPATCH", -1, 128, 0, 90, 0.8, 1.5, 1, 1, 0.3, 3, 360, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.001, 0, 3), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
@@ -1215,7 +1186,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/FROZEN/LARGEPROPS/LARGEROCKS.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.56, 0.8, 1, 1, 0.3, 0, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.14, 0.00192, 0.003, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/COMMODITYPLANT.SCENE.MBIN", "RESCLUMPCOM", -1, 128, 0, 60, 0.5, 0.6, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.01, 0.01, 0), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_189_DEAD_SWAMP_LUSH_WEIRD.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_18_LIVINGSHIP_WEIRD_LUSH.MBIN"}, }, --## 3a1_biome
@@ -1223,7 +1193,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/SWAMP/LARGEPLANT/DEADTREE.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 60, 1.7, 3, 1, 1, 0.3, 6, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.25, 0.03625, 0.029, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/BIOMESPECPLANTS/LUSHPLANT.SCENE.MBIN", "BIOMEPLANT", -1, 128, 0, 60, 2, 24, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 40, 0.04, 0.04, 0), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/BONEFIN.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 80, 1, 8, 1, 1, 0.74, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.015, 0.015, 3), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -1231,7 +1200,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTTENDRILS.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.64, 1.28, 0.9, 1.1, 0, 0, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.0128, 0.01, 1.5), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/SHELLSHARD.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 55, 1.2, 1.8, 1, 1, 0, 5, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.08, 0.044, 0.044, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/HQLUSH/MEDIUMPROPS/MEDIUMBOULDER02.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 1.2, 3.75, 0.8, 1.2, 0.8, 15, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0084, 0.0049, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
@@ -1264,8 +1232,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/SCORCHED/LARGE/LARGESHIELDTREE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 2.2, 0.9, 1.1, 0, 5, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.132, 0.0132, 0.0066, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/BIOMESPECPLANTS/TOXICPLANT.SCENE.MBIN", "BIOMEPLANT", -1, 128, 0, 60, 2, 24, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 40, 0.025, 0.025, 0), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLTENDRIL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 1.2, 1.8, 1, 1, 0, 8, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0035, 0.0035, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_194_FROZEN_BARREN_WEIRD.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_195_TOXIC_FROZEN_WEIRD.MBIN"}, }, --## 3a1_biome
@@ -1289,7 +1255,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/SHELLSHARD.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 55, 1.2, 1.8, 1, 1, 0, 5, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.08, 0.044, 0.044, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/RADIOACTIVE/LARGE/LARGEGLOWPLANT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 2, 70, 1, 1, 0.75, 15, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.177, 0.00295, 0.00295, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVE/SPOREVENT.SCENE.MBIN", "RESCLUMPCOM", -1, 128, 0, 60, 0.5, 0.6, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.01, 0.01, 0), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_197_WEIRD_LUSH.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_198_SWAMP_WEIRD_FROZEN.MBIN"}, }, --## 3a1_biome
@@ -1338,7 +1303,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/ROCKY/LARGEPROPS/ISLANDLARGEBARE.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 180, 1, 2, 1, 1, 0, 0, 180, 55, 0, "FALSE", "FALSE", "TRUE", "FALSE", 0.003, 0.05, 0.01, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/BIOMESPECPLANTS/RADIOACTIVEPLANT.SCENE.MBIN", "BIOMEPLANT", -1, 128, 0, 60, 2, 24, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 40, 0.04, 0.04, 0), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/ROCKS/LARGE/LARGEROCK.SCENE.MBIN", "FOREST", -1, 128, 0, 180, 1.2, 1.725, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0027, 0.0027, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -1379,7 +1343,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/SPINDLESUMMER.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 55, 0.9, 1.5, 0.85, 1.15, 0.5, 15, 180, 55, 0, "TRUE", "TRUE", "TRUE", "TRUE", 0.3, 0.0035, 0.0049, 3), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_25_BARREN_DEAD_LAVA_INDUSTRIAL.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_26_BARREN_INDUSTRIAL_WEIRD.MBIN"}, }, --## 3a1_biome
@@ -1406,7 +1369,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/BARREN/HQ/CORAL/LARGECORALSAND.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 5.25, 9, 1, 1, 0.8, 15, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.0055, 0.0055, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/TOXIC/LARGE/SPORETREESINGLE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 4.5, 7.5, 1, 1, 0, 10, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.0063, 0.0036, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTROCK.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 45, 0.4, 0.8, 1, 1, 0.1, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0039375, 0.007, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_28_HUGE_SUBZERO_BARREN_SCORCHED.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_29_LUSH_BARREN_WEIRD.MBIN"}, }, --## 3a1_biome
@@ -1431,7 +1393,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/NOXIOUS/LARGE/LARGEROCK.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 90, 0.7, 1.6, 1, 1, 0.3, 0, 360, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0, 0.01, 0, 3), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LAVA/MEDIUMPROPS/MEDSHARDINACTIVE01.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.8, 11, 1, 1, 0.75, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.177, 0.00177, 0.00177, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGEEGG.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 35, 1.5, 2.25, 1, 1, 0, 0, 180, 0, -2, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0027, 0.0009, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_30_WEIRD_HUGE_SWAMP_DEAD_LAVA.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_31_WEIRD.MBIN"}, }, --## 3a1_biome
@@ -1454,7 +1415,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGESUMMEREGG.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 45, 1.2, 3, 0.9, 1.1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.009, 0.009, 2), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/WEIRD/ELBUBBLE/ELBUBBLE.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 60, 4, 81, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.0528, 0.00528, 0.00528, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/BONETREEDAMAGED.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 60, 2, 19, 1, 1, 0.75, 0, 180, 0, -2, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0198, 0.0189, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
@@ -1474,7 +1434,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/SUBZERO/RARE/RARELARGE.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 90, 0.8, 1.8, 1, 1, 0, 0, 360, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0, 0.01, 0, 3), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/DEADTREEFLAMING.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 2.5, 11, 1, 1, 0.75, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.0944, 0.00059, 0.00059, 0), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/FLAMESPLINTER.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 60, 1, 70, 1, 1, 0.75, 0, 180, 0, -2, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0059, 0.0059, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_35_TOXIC_HUGE.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_36_TOXIC_HUGE_WEIRD.MBIN"}, }, --## 3a1_biome
@@ -1505,7 +1464,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/FROZEN/LARGEPROPS/LARGEROCKS.SCENE.MBIN", "GRASSCLUMP", -1, 128, 0, 30, 1.8, 2.25, 1, 1, 0.3, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.24, 0.00165, 0.00165, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/BIOMESPECPLANTS/RADIOACTIVEPLANT.SCENE.MBIN", "BIOMEPLANT", -1, 128, 0, 60, 2, 24, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 40, 0.04, 0.04, 0), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/WEIRD/SHARDS/FLOORPIECES.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 45, 0.8, 2.4, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.3375, 0.6, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -1569,7 +1527,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/ROCKY/SWATERFALLSPIKEY.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 180, 1, 2, 1, 1, 0, 0, 180, 55, 0, "FALSE", "FALSE", "TRUE", "FALSE", 0.002, 0.05, 0.01, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LUSHROOM/LARGEBLUESHROOM.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 1.5, 4.5, 1, 1, 0, 4, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.3, 0.022, 0.011, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/ROLLINGPLANT.SCENE.MBIN", "RARE3", -1, 128, 0, 50, 0.7, 1.1, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.03, 0.03, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_45_BARREN_INDUSTRIAL.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_46_FROZEN_LUSH.MBIN"}, }, --## 3a1_biome
@@ -1594,7 +1551,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LUSHROOM/COLOURFANSHROOM.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 3, 70, 1, 1, 0.75, 5, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.177, 0.0059, 0.0059, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/SUMMERSPIKE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1.2, 8.8, 1, 1, 0.2, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.165, 0.0066, 0.0066, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/SHELLSAIL.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.96, 1.44, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0512, 0.08, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -1602,8 +1558,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTTENDRILS.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.8, 2, 1, 1, 0.2, 0, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.0064, 0.01, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/ARRAYSHELLSAND.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 35, 1.5, 3, 1, 1, 0.3, 360, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.0225, 0.0225, 1), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/GASBAGS.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 80, 4, 72, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.104, 0.00208, 0.00208, 3), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_49_BARREN_LUSH.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_4_LIVINGSHIP_RADIOACTIVE.MBIN"}, }, --## 3a1_biome
@@ -1618,7 +1573,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SUMMERUMBRELLA.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.45, 1.2, 1, 1, 0, 10, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.0063, 0.0036, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/ANENOMESHAPE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 80, 5, 8, 1, 1, 0.74, 30, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.198, 0.004, 0.004, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/RADIOACTIVE/LARGE/RADIOACTIVETREE.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 55, 2.55, 4.05, 1, 1, 0, 6, 180, 0, -2, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.027, 0.027, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
@@ -1636,7 +1590,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/BONETREEDAMAGED.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 60, 2, 19, 1, 1, 0.75, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.0885, 0.0198, 0.0189, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/SPINDLESUMMER.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 45, 2.4, 4.5, 1, 1, 0.5, 10, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.0675, 0.009, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LUSHROOM/LARGEFANSHROOM.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1.35, 4.5, 0.9, 1.1, 0, 8, 180, 0, -2, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0132, 0.0132, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -1696,7 +1649,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/LARGESHARDINACTIVE02.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 60, 1.7, 3, 1, 1, 0, 6, 180, 55, -2, "FALSE", "FALSE", "TRUE", "FALSE", 0.25, 0.00125, 0.001, 0), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGEEGGHOLDER.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 2.4, 3.2, 1, 1, 0, 5, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.3, 0.0032, 0.005, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/SCORCHED/LARGE/LARGESHIELDTREE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 35, 0.9, 3, 0.9, 1.1, 0, 5, 180, 0, -2, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.011, 0.011, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -1735,7 +1687,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/ARRAYTWIST.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 360, 1.2, 2.1, 1, 1, 0, 360, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.5, 0.0072, 0.0036, 2), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/ARRAYTWIST.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 360, 1.2, 2.1, 1, 1, 0, 360, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.5, 0.0032, 0.0036, 2), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/LARGECRYSTAL.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 5.25, 7.5, 1, 1, 0.5, 15, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.25, 0.009, 0.0045, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1795,7 +1747,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SINGLESUMMER.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.8, 1.2, 1, 1, 0, 7, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 2, 0.0064, 0.004, 2), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/VORONOITREE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.8, 70, 1, 1, 0.75, 10, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.177, 0.00354, 0.00354, 1.5), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1803,8 +1754,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGEEGG.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 60, 1, 3.3, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.132, 0.00198, 0.00066, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/SPINDLESUMMER.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 45, 0.48, 0.8, 0.85, 1.15, 0.5, 15, 180, 55, 0, "TRUE", "TRUE", "TRUE", "TRUE", 0.3, 0.0028125, 0.007, 3), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/SCORCHED/MEDIUM/VOLCANICPLANT.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 50, 1.2, 1.95, 1, 1, 0, 8, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.018, 0.018, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -1829,7 +1778,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/BONETREEBIGGLOW.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 1.2, 1.6, 1, 1, 0, 3, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.12, 0.0096, 0.015, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTTENDRILS.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 80, 0.4, 2.2, 0.85, 1.15, 0, 0, 180, 55, 0, "TRUE", "TRUE", "TRUE", "TRUE", 0.132, 0.0066, 0.0132, 2), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/NOXIOUS/MEDIUM/MEDIUMPLANT.SCENE.MBIN", "LEVILARGEPATCH", -1, 128, 0, 90, 0.8, 1, 1, 1, 0.2, 20, 360, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.02, 0, 3), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -1896,7 +1844,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/BONETREE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 50, 3, 5.25, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.15, 0.033, 0.033, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/SCORCHED/LARGE/LARGESPIRE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1.7, 70, 1, 1, 0.75, 6, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.0767, 0.00177, 0.00177, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/COMMODITYPLANT.SCENE.MBIN", "BIGHAZCROP", -1, 128, 0, 50, 0.3, 0.6, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.25, 0.25, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_80_HUGE_SCORCHED_LUSH.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_81_HUGE_SUBZERO_TOXIC.MBIN"}, }, --## 3a1_biome
@@ -1944,7 +1891,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/FROZEN/LARGEPROPS/SNOWCOVEREDWEIRDPROP.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 1.5, 1.5, 1, 1, 0, 15, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.3, 0.00225, 0.0009, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/BIOMESPECPLANTS/SNOWPLANT.SCENE.MBIN", "BIOMEPLANT", -1, 128, 0, 60, 2, 24, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 40, 0.04, 0.04, 0), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/BURSTC.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.9, 3, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0189, 0.0189, 3), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -1963,7 +1909,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/RADIOACTIVE/LARGE/LARGEGLOWPLANTSINGLE.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 2.4, 4, 1, 1, 0, 0, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.3, 0.00192, 0.001, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/BARREN/HQ/LARGEARRANGEDROCK02.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 60, 1.4, 2.3, 1, 1, 0.7, 10, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.0826, 0.0066, 0.0059, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SINGLESUMMER.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 60, 1, 3.3, 1, 1, 0, 7, 180, 0, -2, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0066, 0.00264, 2), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_88_ROCKY_WEIRD.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_89_BARREN_WEIRD.MBIN"}, }, --## 3a1_biome
@@ -1989,7 +1934,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/RADIOACTIVE/LARGE/RADIOACTIVETREE.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 1.36, 2.16, 1, 1, 0, 6, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.18, 0.0192, 0.03, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/SUMMERSPIKE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1.2, 8.8, 1, 1, 0.2, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.165, 0.0066, 0.0066, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/BURNT/LARGE/LARGEPLANT.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 45, 0.6, 1.4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0075, 0.006, 0), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -2015,7 +1959,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/ROCKY/LARGEPROPS/ISLANDLARGEBARE.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 180, 1, 2, 1, 1, 0, 0, 180, 55, 0, "FALSE", "FALSE", "TRUE", "FALSE", 0.003, 0.05, 0.01, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/BIOMESPECPLANTS/SNOWPLANT.SCENE.MBIN", "BIOMEPLANT", -1, 128, 0, 60, 2, 24, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 40, 0.04, 0.04, 0), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/BONECOLLECT.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 45, 0.72, 2.4, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0016875, 0.003, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -2025,7 +1968,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/ROCKY/LARGEPROPS/ISLANDLARGE.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 180, 1, 2, 1, 1, 0, 0, 180, 55, 0, "FALSE", "FALSE", "TRUE", "FALSE", 0, 0.05, 0.01, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LUSHROOM/LARGEBLUESHROOM.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 0.8, 2.4, 1, 1, 0, 4, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.3, 0.0128, 0.01, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/MEDIUMPLANT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 1.5, 3, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0035, 0.0035, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_94_BURNT_RADIOACTIVE_WEIRD.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_95_LUSH_WEIRD_INDUSTRIAL.MBIN"}, }, --## 3a1_biome
@@ -2033,7 +1975,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/BURNT/RARE/RARELARGE.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 90, 0.8, 1.8, 1, 1, 0, 0, 360, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0, 0.01, 0, 3), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/BIOMESPECPLANTS/RADIOACTIVEPLANT.SCENE.MBIN", "BIOMEPLANT", -1, 128, 0, 60, 2, 24, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 40, 0.04, 0.04, 0), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/WEIRD/MSTRUCTURES/FLOATJOINT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.15, 0.6, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.072, 0.072, 1), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end
 
@@ -2049,7 +1990,6 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SUMMERUMBRELLA.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.45, 1.2, 1, 1, 0, 10, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.0063, 0.0036, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/RADIOACTIVE/LARGE/CURVEDROCK.SCENE.MBIN", "BLANKETCLUMX", -1, 128, 0, 40, 1.05, 1.8, 1, 1, 0, 8, 180, 55, 0, "TRUE", "TRUE", "TRUE", "FALSE", 0.08, 0.0108, 0.0108, 1), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/LUSHROOM/LARGEFANSHROOMSINGLE.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 30, 3.2, 4, 0.9, 1.1, 0, 8, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0, 0.0064, 0.01, 2), }, --## 3d_biome_obj
 					}, }, --## 3f_biome_end

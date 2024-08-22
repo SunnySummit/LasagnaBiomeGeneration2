@@ -22,6 +22,15 @@ local PlanetLODMultiplier = 3		--planet lod distance multiplier
 
 
 function AddGrassProp(modelPath, placem, minHeight, maxHeight, minAngle, maxAngle, minScale, maxScale, minScaleY, maxScaleY, patchEdgeSc, maxRotation, maxYRotation, maxRaise, maxLower, destroyableByShip, destroyableByTerrEdit, isFloatingIsland, creatureCanEat, coverage, flatDensity, slopeDensity, slopeMultiplier)
+
+--Maxima - reduce high density tall-ish grass & toxic grass:
+if modelPath == "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN" and flatDensity > 0.1 then
+    flatDensity = flatDensity * 0.33
+end
+if modelPath == "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN" and flatDensity > 0.05 then
+    flatDensity = flatDensity * 0.66
+end
+
 return [[
       <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
@@ -333,7 +342,7 @@ local replaceObjects =
 NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 {
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE", --remove notices that a variable was not used
-["MOD_FILENAME"] 			= "___Las_Ground_Detail_v1.31.pak",
+["MOD_FILENAME"] 			= "___Las_Ground_Detail_Maxima_v1.31.pak",
 ["MOD_AUTHOR"]				= "goosetehmoose",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
