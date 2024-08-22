@@ -32,6 +32,12 @@ navigate to the 'Releases' tab ([or click here](https://github.com/SunnySummit/L
 
 [plumgen](https://github.com/SunnySummit/PLUMGEN/releases) - **biome generation app.**
 
+# performance
+
+1. lower in-game "Planet Quality" settings for much better performance.
+2. lower shadow quality settings in thick forests.
+3. try a less demanding version of a pak (e.g. spawner_maxima vs spawner_minima).
+
 # albums
 
 1. [image dump 1](https://imgur.com/a/7i6oG51)
