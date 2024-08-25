@@ -7,8 +7,6 @@ A giant planet generation mod for No Man's Sky. Includes PAK mods & LUA scripts.
 
 **compatible with:** worlds part 1
 
-you might encounter issues with huge rocks. use custombiomes_med if it really bothers you.
-
 i recommend installing all paks that start with three underscores.
 
 feel free to make your own changes. in order to distribute you must:
