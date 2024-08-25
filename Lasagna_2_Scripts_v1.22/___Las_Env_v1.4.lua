@@ -33,23 +33,24 @@ if maxScale >= 4 then
     end
 end
 
-if flatDensity <= 0.08 then
-	if maxScale > 8 and string.lower(isFloatingIsland) == "false" then --it's a big prop and is not an island, make it so it won't disappear
-		propType = "Single"
-		if maxRaise < 1 then
-			maxRaise = 0
-			maxLower = 0
-		end
-		isFloatingIsland = "TRUE"
-		--flatDensity = flatDensity * 0.5 --flatDensity 2x less
+if flatDensity <= 0.08 and maxScale > 8 and string.lower(isFloatingIsland) == "false" then --it's a big prop and is not an island, make it so it won't disappear
+	propType = "Single"
+	if maxRaise < 1 then
+		maxRaise = 0
+		maxLower = 0
 	end
+	isFloatingIsland = "TRUE"
+	--flatDensity = flatDensity * 0.5 --flatDensity 2x less
 end
 
-if maxRaise < 5 or flatDensity > 0.08 then --it's not a floating island, change to instanced
+if maxRaise < 5 and flatDensity > 0.08 then --it's not a floating island, change to instanced
 	propType = "Instanced"
 	maxRaise = 0
 	maxLower = 0
 	isFloatingIsland = "FALSE"
+else
+	propType = "Single"
+	isFloatingIsland = "TRUE"
 end
 
 return [[
@@ -168,23 +169,24 @@ if maxScale >= 4 then
     end
 end
 
-if flatDensity <= 0.08 then
-	if maxScale > 8 and string.lower(isFloatingIsland) == "false" then --it's a big prop and is not an island, make it so it won't disappear
-		propType = "Single"
-		if maxRaise < 1 then
-			maxRaise = 0
-			maxLower = 0
-		end
-		isFloatingIsland = "TRUE"
-		--flatDensity = flatDensity * 0.5 --flatDensity 2x less
+if flatDensity <= 0.08 and maxScale > 8 and string.lower(isFloatingIsland) == "false" then --it's a big prop and is not an island, make it so it won't disappear
+	propType = "Single"
+	if maxRaise < 1 then
+		maxRaise = 0
+		maxLower = 0
 	end
+	isFloatingIsland = "TRUE"
+	--flatDensity = flatDensity * 0.5 --flatDensity 2x less
 end
 
-if maxRaise < 5 or flatDensity > 0.08 then --it's not a floating island, change to instanced
+if maxRaise < 5 and flatDensity > 0.08 then --it's not a floating island, change to instanced
 	propType = "Instanced"
 	maxRaise = 0
 	maxLower = 0
 	isFloatingIsland = "FALSE"
+else
+	propType = "Single"
+	isFloatingIsland = "TRUE"
 end
 
 return [[
@@ -303,23 +305,24 @@ if maxScale >= 4 then
     end
 end
 
-if flatDensity <= 0.08 then
-	if maxScale > 8 and string.lower(isFloatingIsland) == "false" then --it's a big prop and is not an island, make it so it won't disappear
-		propType = "Single"
-		if maxRaise < 1 then
-			maxRaise = 0
-			maxLower = 0
-		end
-		isFloatingIsland = "TRUE"
-		--flatDensity = flatDensity * 0.5 --flatDensity 2x less
+if flatDensity <= 0.08 and maxScale > 8 and string.lower(isFloatingIsland) == "false" then --it's a big prop and is not an island, make it so it won't disappear
+	propType = "Single"
+	if maxRaise < 1 then
+		maxRaise = 0
+		maxLower = 0
 	end
+	isFloatingIsland = "TRUE"
+	--flatDensity = flatDensity * 0.5 --flatDensity 2x less
 end
 
-if maxRaise < 5 or flatDensity > 0.08 then --it's not a floating island, change to instanced
+if maxRaise < 5 and flatDensity > 0.08 then --it's not a floating island, change to instanced
 	propType = "Instanced"
 	maxRaise = 0
 	maxLower = 0
 	isFloatingIsland = "FALSE"
+else
+	propType = "Single"
+	isFloatingIsland = "TRUE"
 end
 
 return [[

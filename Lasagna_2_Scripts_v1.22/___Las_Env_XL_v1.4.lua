@@ -40,11 +40,14 @@ if flatDensity <= 0.08 and maxScale > 8 and string.lower(isFloatingIsland) == "f
 	--flatDensity = flatDensity * 0.5 --flatDensity 2x less
 end
 
-if maxRaise < 5 or flatDensity > 0.08 then --it's not a floating island, change to instanced
+if maxRaise < 5 and flatDensity > 0.08 then --it's not a floating island, change to instanced
 	propType = "Instanced"
 	maxRaise = 0
 	maxLower = 0
 	isFloatingIsland = "FALSE"
+else
+	propType = "Single"
+	isFloatingIsland = "TRUE"
 end
 
 return [[
@@ -170,11 +173,14 @@ if flatDensity <= 0.08 and maxScale > 8 and string.lower(isFloatingIsland) == "f
 	--flatDensity = flatDensity * 0.5 --flatDensity 2x less
 end
 
-if maxRaise < 5 or flatDensity > 0.08 then --it's not a floating island, change to instanced
+if maxRaise < 5 and flatDensity > 0.08 then --it's not a floating island, change to instanced
 	propType = "Instanced"
 	maxRaise = 0
 	maxLower = 0
 	isFloatingIsland = "FALSE"
+else
+	propType = "Single"
+	isFloatingIsland = "TRUE"
 end
 
 return [[
@@ -300,11 +306,14 @@ if flatDensity <= 0.08 and maxScale > 8 and string.lower(isFloatingIsland) == "f
 	--flatDensity = flatDensity * 0.5 --flatDensity 2x less
 end
 
-if maxRaise < 5 or flatDensity > 0.08 then --it's not a floating island, change to instanced
+if maxRaise < 5 and flatDensity > 0.08 then --it's not a floating island, change to instanced
 	propType = "Instanced"
 	maxRaise = 0
 	maxLower = 0
 	isFloatingIsland = "FALSE"
+else
+	propType = "Single"
+	isFloatingIsland = "TRUE"
 end
 
 return [[

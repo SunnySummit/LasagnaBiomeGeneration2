@@ -27,6 +27,18 @@ maxRaise = 0
 maxLower = 0
 isFloatingIsland = "FALSE"
 
+--check if 'tree' in modelPath
+if string.find(string.lower(modelPath), "tree") then
+	maxRotation = 5
+	maxYRotation = 180
+end
+
+if flatDensity <= 0.08 and maxScale > 8 then --it's a big prop, make it so it won't disappear
+	propType = "Single"
+	isFloatingIsland = "TRUE"
+	--flatDensity = flatDensity * 0.5 --flatDensity 2x less
+end
+
 return [[
       <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
@@ -138,6 +150,18 @@ function AddLandmarkProp(modelPath, placem, minHeight, maxHeight, minAngle, maxA
 maxRaise = 0
 maxLower = 0
 isFloatingIsland = "FALSE"
+
+--check if 'tree' in modelPath
+if string.find(string.lower(modelPath), "tree") then
+	maxRotation = 5
+	maxYRotation = 180
+end
+
+if flatDensity <= 0.08 and maxScale > 8 then --it's a big prop, make it so it won't disappear
+	propType = "Single"
+	isFloatingIsland = "TRUE"
+	--flatDensity = flatDensity * 0.5 --flatDensity 2x less
+end
 
 return [[
       <Property value="GcObjectSpawnData.xml">

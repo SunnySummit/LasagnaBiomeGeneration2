@@ -23,14 +23,27 @@ local PlanetLODMultiplier = 3		--planet lod distance multiplier
 --This adds the exml "context" for each model, i.e. the max scale.
 function AddDistantProp(modelPath, placem, minHeight, maxHeight, minAngle, maxAngle, minScale, maxScale, minScaleY, maxScaleY, patchEdgeSc, maxRotation, maxYRotation, maxRaise, maxLower, destroyableByShip, destroyableByTerrEdit, isFloatingIsland, creatureCanEat, coverage, flatDensity, slopeDensity, slopeMultiplier)
 
+maxRaise = 0
+maxLower = 0
+isFloatingIsland = "FALSE"
+
 if flatDensity <= 0.08 and maxScale < 8 then
 	minScale = minScale * 2
 	maxScale = maxScale * 2 --maxscale 2x bigger
 end
 
-maxRaise = 0
-maxLower = 0
-isFloatingIsland = "FALSE"
+--check if 'tree' in modelPath
+if string.find(string.lower(modelPath), "tree") then
+	maxRotation = 5
+	maxYRotation = 180
+end
+
+if flatDensity <= 0.08 and maxScale > 8 then --it's a big prop, make it so it won't disappear
+	propType = "Single"
+	isFloatingIsland = "TRUE"
+	--flatDensity = flatDensity * 0.5 --flatDensity 2x less
+end
+
 
 return [[
       <Property value="GcObjectSpawnData.xml">
@@ -140,14 +153,26 @@ end
 
 function AddLandmarkProp(modelPath, placem, minHeight, maxHeight, minAngle, maxAngle, minScale, maxScale, minScaleY, maxScaleY, patchEdgeSc, maxRotation, maxYRotation, maxRaise, maxLower, destroyableByShip, destroyableByTerrEdit, isFloatingIsland, creatureCanEat, coverage, flatDensity, slopeDensity, slopeMultiplier)
 
+maxRaise = 0
+maxLower = 0
+isFloatingIsland = "FALSE"
+
 if flatDensity <= 0.08 and maxScale < 8 then
 	minScale = minScale * 4
 	maxScale = maxScale * 4 --maxscale 3x bigger
 end
 
-maxRaise = 0
-maxLower = 0
-isFloatingIsland = "FALSE"
+--check if 'tree' in modelPath
+if string.find(string.lower(modelPath), "tree") then
+	maxRotation = 5
+	maxYRotation = 180
+end
+
+if flatDensity <= 0.08 and maxScale > 8 then --it's a big prop, make it so it won't disappear
+	propType = "Single"
+	isFloatingIsland = "TRUE"
+	--flatDensity = flatDensity * 0.5 --flatDensity 2x less
+end
 
 return [[
       <Property value="GcObjectSpawnData.xml">
