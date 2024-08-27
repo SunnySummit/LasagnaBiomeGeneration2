@@ -13,7 +13,7 @@ maxima = higher density.
 
 always keep SPAWNER installed.
 
-that said, paks are provided as is.
+paks are provided as is.
 
 feel free to make your own changes. in order to distribute (paks or lua scripts) you must:
 1. provide full credits in a readme file included with the archive.
