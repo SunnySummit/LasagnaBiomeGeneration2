@@ -9,7 +9,7 @@ A giant planet generation mod for No Man's Sky. Includes PAK mods & LUA scripts.
 
 i recommend installing all paks that start with three underscores.
 
-maxima = higher density, XL = larger scale.
+maxima = higher density.
 
 always keep SPAWNER installed.
 
