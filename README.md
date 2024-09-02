@@ -9,15 +9,18 @@ A giant planet generation mod for No Man's Sky. Includes PAK mods & LUA scripts.
 
 i recommend installing all paks that start with three underscores.
 
-feel free to make your own changes. in order to distribute you must:
-1. provide full credits in a readme file included with the archive.
-2. use open (GPLv3) licensing and/or open nexus mods permissions (include these 4 points in the readme/description page).
-3. you cannot sell or profit from this mod.
-4. you cannot distribute this mod for other games or media besides No Man's Sky.
+maxima = higher density.
 
-credits can be found in the archive.
+always keep SPAWNER installed.
 
 paks are provided as is.
+
+feel free to make your own changes. in order to distribute (paks or lua scripts) you must:
+1. provide full credits in a readme file included with the archive.
+2. use open (GPLv3) licensing and/or open nexus mods permissions (include these 5 points in the readme/description page).
+3. you cannot sell or profit from this mod.
+4. you cannot distribute this mod for other games or media besides No Man's Sky.
+5. don't re-upload these lua scripts, instead, link to this repo (or create a fork).
 
 ---
 # download instructions
