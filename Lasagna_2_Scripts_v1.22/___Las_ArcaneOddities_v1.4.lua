@@ -17,14 +17,16 @@ local LODAdjustMultiplier = 2		--inconsistent results
 local RegionLODRadiusAdd = 3			--increases draw distance hard-limit, value above '3' caused crash
 local PlanetLODMultiplier = 3		--planet lod distance multiplier
 ------------------------------------------------------------------------------------------------------------------------
---Section above originally written by InsaneRuffles, modified by FjordFish ---------------------------------------------
+--Section above originally written by InsaneRuffles, modified by goosetehmoose -----------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
+
+local propType = ""
 
 --This adds the exml "context" for each model, i.e. the max scale.
 function AddDistantProp(modelPath, placem, minHeight, maxHeight, minAngle, maxAngle, minScale, maxScale, minScaleY, maxScaleY, patchEdgeSc, maxRotation, destroyableByShip, destroyableByTerrEdit, creatureCanEat, coverage, flatDensity, slopeDensity, slopeMultiplier)
 
-maxRaise = 0
-maxLower = 0
+local maxRaise = 0
+local maxLower = 0
 
 return [[
       <Property value="GcObjectSpawnData.xml">
@@ -73,15 +75,15 @@ return [[
         <Property name="PatchEdgeScaling" value="]] .. patchEdgeSc .. [[" />
         <Property name="MaxXZRotation" value="]] .. maxRotation .. [[" />
         <Property name="MaxYRotation" value="180" />
-        <Property name="MaxRaise" value="0" />
-        <Property name="MaxLower" value="-2" />
+        <Property name="MaxRaise" value="]] .. maxRaise .. [[" />
+        <Property name="MaxLower" value="]] .. maxLower .. [[" />
         <Property name="AutoCollision" value="False" />
         <Property name="CollideWithPlayer" value="True" />
         <Property name="CollideWithPlayerVehicle" value="True" />
         <Property name="DestroyedByPlayerVehicle" value="True" />
         <Property name="DestroyedByPlayerShip" value="]] .. destroyableByShip .. [[" />
         <Property name="DestroyedByTerrainEdit" value="]] .. destroyableByTerrEdit .. [[" />
-        <Property name="IsFloatingIsland" value="True" />
+        <Property name="IsFloatingIsland" value="False" />
         <Property name="InvisibleToCamera" value="False" />
         <Property name="CreaturesCanEat" value="]] .. creatureCanEat .. [[" />
         <Property name="ShearWindStrength" value="0" />
@@ -134,8 +136,8 @@ end
 
 function AddLandmarkProp(modelPath, placem, minHeight, maxHeight, minAngle, maxAngle, minScale, maxScale, minScaleY, maxScaleY, patchEdgeSc, maxRotation, destroyableByShip, destroyableByTerrEdit, creatureCanEat, coverage, flatDensity, slopeDensity, slopeMultiplier)
 
-maxRaise = 0
-maxLower = 0
+local maxRaise = -2
+local maxLower = -3
 
 return [[
       <Property value="GcObjectSpawnData.xml">
@@ -184,115 +186,8 @@ return [[
         <Property name="PatchEdgeScaling" value="]] .. patchEdgeSc .. [[" />
         <Property name="MaxXZRotation" value="]] .. maxRotation .. [[" />
         <Property name="MaxYRotation" value="180" />
-        <Property name="MaxRaise" value="0" />
-        <Property name="MaxLower" value="-2" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="True" />
-        <Property name="CollideWithPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="]] .. destroyableByShip .. [[" />
-        <Property name="DestroyedByTerrainEdit" value="]] .. destroyableByTerrEdit .. [[" />
-        <Property name="IsFloatingIsland" value="True" />
-        <Property name="InvisibleToCamera" value="False" />
-        <Property name="CreaturesCanEat" value="]] .. creatureCanEat .. [[" />
-        <Property name="ShearWindStrength" value="0" />
-		<Property name="SupportsScanToReveal" value="False" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="]] .. coverage .. [[" />
-          <Property name="FlatDensity" value="]] .. flatDensity .. [[" />
-          <Property name="SlopeDensity" value="]] .. slopeDensity .. [[" />
-          <Property name="SlopeMultiplier" value="]] .. slopeMultiplier .. [[" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="]] .. coverage .. [[" />
-            <Property name="FlatDensity" value="]] .. flatDensity .. [[" />
-            <Property name="SlopeDensity" value="]] .. slopeDensity .. [[" />
-            <Property name="SlopeMultiplier" value="]] .. slopeMultiplier .. [[" />
-            <Property name="MaxRegionRadius" value="3" />
-            <Property name="MaxImposterRadius" value="99" />
-            <Property name="FadeOutStartDistance" value="9999" />
-            <Property name="FadeOutEndDistance" value="9999" />
-            <Property name="FadeOutOffsetDistance" value="0" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
-              <Property value="500" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-]]
-end
-
-
-function AddObjectProp(modelPath, placem, minHeight, maxHeight, minAngle, maxAngle, minScale, maxScale, minScaleY, maxScaleY, patchEdgeSc, maxRotation, destroyableByShip, destroyableByTerrEdit, creatureCanEat, coverage, flatDensity, slopeDensity, slopeMultiplier)
-return [[
-      <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="]] .. modelPath .. [[" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers">
-            </Property>
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="]] .. placem .. [[" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="Normal" />
-        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
-        <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="]] .. minHeight .. [[" />
-        <Property name="MaxHeight" value="]] .. maxHeight .. [[" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="]] .. minAngle .. [[" />
-        <Property name="MaxAngle" value="]] .. maxAngle .. [[" />
-        <Property name="MatchGroundColour" value="False" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="False" />
-        <Property name="MinScale" value="]] .. minScale .. [[" />
-        <Property name="MaxScale" value="]] .. maxScale .. [[" />
-        <Property name="MinScaleY" value="]] .. minScaleY .. [[" />
-        <Property name="MaxScaleY" value="]] .. maxScaleY .. [[" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="]] .. patchEdgeSc .. [[" />
-        <Property name="MaxXZRotation" value="]] .. maxRotation .. [[" />
-        <Property name="MaxYRotation" value="180" />
-        <Property name="MaxRaise" value="0" />
-        <Property name="MaxLower" value="0" />
+        <Property name="MaxRaise" value="]] .. maxRaise .. [[" />
+        <Property name="MaxLower" value="]] .. maxLower .. [[" />
         <Property name="AutoCollision" value="False" />
         <Property name="CollideWithPlayer" value="True" />
         <Property name="CollideWithPlayerVehicle" value="True" />
@@ -338,9 +233,9 @@ return [[
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="10" />
-              <Property value="30" />
-              <Property value="75" />
+              <Property value="20" />
+              <Property value="60" />
+              <Property value="150" />
               <Property value="500" />
             </Property>
           </Property>
@@ -741,7 +636,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 2.31, 5.94, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\LARGETREE1.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 2, 3, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.027, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
@@ -813,8 +708,8 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 3.3, 5.61, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/HUGEPROPS/HUGERING/HUGEROCKRING.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 0.99, 2.31, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_10Q.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_10R.MBIN"}, }, --## 3a1_biome
@@ -847,7 +742,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 4.62, 4.62, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.055, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
@@ -873,7 +768,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 4.62, 4.95, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.055, 0.05, 1), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/HUGEPROPS/HUGERING/HUGEROCKRING.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 0.99, 2.31, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.027, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLGLOWPLANT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
@@ -907,7 +802,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 3.63, 6.93, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/HUGEPROPS/HUGERING/HUGEROCKRING.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 0.99, 2.31, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
@@ -938,8 +833,8 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 2.31, 4.95, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.057, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/RAINFOREST/MEDIUMPLANT/MEDIUMFALLENTREE1.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 2.31, 4.95, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.057, 0.05, 1), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_11F.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_11G.MBIN"}, }, --## 3a1_biome
@@ -997,7 +892,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 1.65, 4.95, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/RAINFOREST/MEDIUMPLANT/MEDIUMFALLENTREE1.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 1.65, 4.95, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
@@ -1015,7 +910,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/HUGEPROPS/HUGETOXIC/HUGETENDRIL.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 4.29, 6.93, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.057, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_11P.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_11Q.MBIN"}, }, --## 3a1_biome
@@ -1033,7 +928,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\STRAIGHTTREELARGE.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 3.3, 7.26, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.055, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
@@ -1042,8 +937,8 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\GLOWING\LARGEPLANT\MEDGLOWINGTREE1.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 2.31, 6.27, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_11T.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_11U.MBIN"}, }, --## 3a1_biome
@@ -1109,7 +1004,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 1.65, 4.62, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.055, 0.05, 1), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/RAINFOREST/MEDIUMPLANT/MEDIUMFALLENTREE1.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 1.65, 4.62, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.055, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLGLOWPLANT.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
@@ -1135,7 +1030,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\COMMON\ROBOTS\WALKER.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 4.62, 4.95, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.055, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
@@ -1369,7 +1264,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 4.29, 5.94, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.055, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.027, 0.03, 3), }, --## 3e_biome_detail
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_13K.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_13L.MBIN"}, }, --## 3a1_biome
@@ -1444,7 +1339,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 3.96, 4.95, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.055, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_13U.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_13V.MBIN"}, }, --## 3a1_biome
@@ -1502,7 +1397,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/RADIOACTIVE/MEDIUM/MEDIUMGLOWROCKSINGLE.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 3.96, 5.61, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_14C.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_14D.MBIN"}, }, --## 3a1_biome
@@ -1571,7 +1466,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/CONTOURPOD.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 4.29, 5.61, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.057, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.027, 0.03, 3), }, --## 3e_biome_detail
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_14M.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_14N.MBIN"}, }, --## 3a1_biome
@@ -1666,7 +1561,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\ALIEN\LARGEPLANT\LARGETREE02.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 3.96, 5.94, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_14Y.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_14Z.MBIN"}, }, --## 3a1_biome
@@ -1723,7 +1618,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/CONTOURPOD.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 2.31, 5.61, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
@@ -1747,7 +1642,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 1.65, 5.94, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/RAINFOREST/MEDIUMPLANT/MEDIUMFALLENTREE1.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 1.65, 5.94, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.027, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/LUSHROOM/SMALLSHROOMCLUSTER.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
@@ -1794,7 +1689,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGETREE.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 4.62, 6.27, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.055, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_15N.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_15O.MBIN"}, }, --## 3a1_biome
@@ -1828,14 +1723,14 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE17.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 1.65, 4.95, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_15R.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_15S.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\MEDIUMUMBRELLA01.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 3.3, 5.94, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/NEVADA/LARGEPLANTS/LARGEPLANT03.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 3.3, 5.94, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLGLOWPLANT.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
@@ -1987,7 +1882,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\MEDIUMDEADTREE01.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 3.3, 6.93, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.057, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_16O.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_16P.MBIN"}, }, --## 3a1_biome
@@ -2006,7 +1901,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGETREEBARE.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 1.65, 5.61, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.057, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.027, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_16Q.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_16R.MBIN"}, }, --## 3a1_biome
@@ -2082,7 +1977,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\VINETREELARGE.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 4.62, 5.94, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
@@ -2108,7 +2003,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\ROTATINGDETAIL.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 2.31, 6.27, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.055, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_17H.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_17I.MBIN"}, }, --## 3a1_biome
@@ -2263,7 +2158,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/FLAMESPLINTER.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 3.3, 3.63, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.057, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_18E.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_18F.MBIN"}, }, --## 3a1_biome
@@ -2298,7 +2193,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RELIC\RELIC.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 3.96, 6.93, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
@@ -2386,7 +2281,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\LAMPSHAPE.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 3.96, 5.61, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.055, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_19C.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_19D.MBIN"}, }, --## 3a1_biome
@@ -2454,7 +2349,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/CONTOURTOWER.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 2.31, 4.95, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLGLOWPLANT.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_19M.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_19O.MBIN"}, }, --## 3a1_biome
@@ -2515,7 +2410,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\CUCUMBERSHAPE.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 4.29, 6.27, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.057, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_19X.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_19Y.MBIN"}, }, --## 3a1_biome
@@ -2574,7 +2469,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LUSHROOM/LARGEBLUESHROOM.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 1.65, 5.94, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_1H.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_1I.MBIN"}, }, --## 3a1_biome
@@ -2591,7 +2486,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/LUSHROOM/LARGEBLUESHROOMSINGLE.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 4.29, 5.61, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_1J.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_1K.MBIN"}, }, --## 3a1_biome
@@ -2658,7 +2553,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/SCORCHED/LARGE/LARGESPIRE.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 1.65, 4.95, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLGLOWPLANT.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
@@ -2668,7 +2563,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\SMALLCEDAR01.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 3.96, 5.94, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
@@ -2705,7 +2600,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTALSMALL.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 2.31, 2.64, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_20B.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_20C.MBIN"}, }, --## 3a1_biome
@@ -2824,7 +2719,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/RADIOACTIVE/MEDIUM/MEDIUMGLOWROCKSINGLE.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 0.99, 2.31, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.057, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_20R.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_20S.MBIN"}, }, --## 3a1_biome
@@ -2841,7 +2736,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGETREE.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 0.99, 2.31, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
@@ -2850,7 +2745,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\ARRAYTWIST.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 4.62, 6.93, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_20U.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_20V.MBIN"}, }, --## 3a1_biome
@@ -2890,7 +2785,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\CRYSTAL\SMALLPROP\TINYCUBES.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 0.99, 2.31, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_20Z.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_21A.MBIN"}, }, --## 3a1_biome
@@ -2898,7 +2793,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/HUGEPROPS/HUGETOXIC/HUGETENDRIL.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 0.99, 2.31, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_21A.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_21C.MBIN"}, }, --## 3a1_biome
@@ -2971,7 +2866,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE21.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 0.99, 2.64, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_21K.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_21M.MBIN"}, }, --## 3a1_biome
@@ -3037,7 +2932,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/SCORCHED/LARGE/LARGESPIRE.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 1.32, 2.97, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_21V.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_21W.MBIN"}, }, --## 3a1_biome
@@ -3045,7 +2940,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/BONETREE.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 1.32, 2.64, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.055, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
@@ -3053,7 +2948,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 4.95, 6.6, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.057, 0.05, 1), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\LARGETREE1.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 1.5, 2, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.057, 0.05, 1), }, --## 3b_biome_dist
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_21X.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_21Z.MBIN"}, }, --## 3a1_biome
@@ -3099,7 +2994,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\CRYSTAL\LARGEPROP\GIANTSPIKE.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 1.65, 2.97, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
@@ -3116,7 +3011,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\CRYSTAL\LARGEPROP\PILLAR1.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 3.96, 5.94, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_2X.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_2Y.MBIN"}, }, --## 3a1_biome
@@ -3189,7 +3084,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONUMENTS\STARGATEMAIN.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 0.99, 1.65, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_3G.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_3H.MBIN"}, }, --## 3a1_biome
@@ -3221,7 +3116,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/MEDIUMSPRUCE01.SCENE.MBIN", "RARE1", -1, 128, 0, 30, 1.65, 4.62, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_3K.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_3L.MBIN"}, }, --## 3a1_biome
@@ -3253,7 +3148,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/SWAMP/LARGEPLANT/MANGROVELARGE.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 0.99, 1.65, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.053, 0.05, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.03, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_3O.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_3P.MBIN"}, }, --## 3a1_biome
@@ -3275,7 +3170,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/COMMON/TREES/LARGETREE1.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 3.63, 6.27, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.057, 0.05, 1), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\LARGETREE1.SCENE.MBIN", "CRYSTAL3", -1, 128, 0, 30, 3.63, 6.27, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.057, 0.05, 1), }, --## 3b_biome_dist
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_3R.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_3S.MBIN"}, }, --## 3a1_biome
@@ -3301,7 +3196,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/LARGEFIR01.SCENE.MBIN", "RARE_BONES", -1, 128, 0, 30, 0.66, 1.98, 1, 1, 0, 5, "TRUE", "TRUE", "FALSE", 3, 0.05, 0.05, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN", "JAMESPATCH", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.018, 0.03, 3), }, --## 3e_biome_detail
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddGrassProp("BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN", "SMALLCLUMP", -1, 128, 0, 40, 0.8, 1.0, 1, 1, 0.5, 0, "TRUE", "TRUE", "FALSE", 0.16, 0.025, 0.03, 3), }, --## 3e_biome_detail
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_3U.MBIN","METADATA/SIMULATION/SOLARSYSTEM/ARCANE_ODDITIES/AO_OBJECTS_3X.MBIN"}, }, --## 3a1_biome
