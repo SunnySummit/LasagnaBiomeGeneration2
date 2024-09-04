@@ -5,7 +5,7 @@ A giant planet generation mod for No Man's Sky. Includes PAK mods & LUA scripts.
 
 ![thumbnail](https://i.imgur.com/brZBg1X.jpeg)
 
-**compatible with:** worlds part 1
+**compatible with:** worlds part 1 - Aquarius
 
 i recommend installing all paks that start with three underscores.
 
