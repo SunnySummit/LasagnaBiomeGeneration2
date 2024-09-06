@@ -98,7 +98,7 @@ return [[
           <Property name="MaxImposterRadius" value="10" />
           <Property name="FadeOutStartDistance" value="9999" />
           <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="FadeOutOffsetDistance" value="0" />NEWHQTREES
           <Property name="LodDistances">
             <Property value="0" />
             <Property value="20" />
@@ -445,7 +445,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI5.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.009, 0.009, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI4.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.009, 0.009, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TALLPINETREES/TALLPINETREEBIG.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1.5, 2.2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.13, 0.019, 0.019, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TALLPINETREES/TALLPINETREESMALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.14, 0.14, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TALLPINETREES/TALLPINETREESMALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.074, 0.14, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_3.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_4.MBIN"}, }, --## 3a1_biome
@@ -459,9 +459,9 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI4.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.0025, 0.0035, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI2.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.0025, 0.0035, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI1.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 0.6, 1, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.001, 0.001, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONEGREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.008, 0.008, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGEGREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.008, 0.008, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPGREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.008, 0.008, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONEGREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.006, 0.008, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGEGREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.006, 0.008, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPGREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.006, 0.008, 0.0001), }, --## 3b_biome_dist
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_4.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_5.MBIN"}, }, --## 3a1_biome
@@ -475,9 +475,9 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI4.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.0025, 0.0035, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI2.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.0025, 0.0035, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI1.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 0.6, 1, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.001, 0.001, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONEGREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.008, 0.008, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGEGREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.008, 0.008, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPGREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.008, 0.008, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONEGREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.006, 0.008, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGEGREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.006, 0.008, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPGREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.006, 0.008, 0.0001), }, --## 3b_biome_dist
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_5.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_6.MBIN"}, }, --## 3a1_biome
@@ -540,7 +540,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQPLANTS/HQFLOWER_ROSE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.025, 0, 2), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQPLANTS/HQFLOWER_ROSE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.02, 0, 2), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQPLANTS/HQFLOWER_DAISY.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.3, 1.5, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.084, 0.084, 0.0001), }, --## 3b_biome_dist
 					}, }, --## 3f_biome_end
 
@@ -564,7 +564,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/GIANTROCKS/GIANTROCK2.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 0.75, 1, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.12, 0.003, 0.003, 1), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/GIANTROCKS/GIANTROCK2.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 0.75, 1, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.12, 0.002, 0.003, 1), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/GIANTROCKS/GIANTROCK4TALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 1, 5, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.032, 0.032, 0.0001), }, --## 3b_biome_dist
 					}, }, --## 3f_biome_end
 
@@ -582,7 +582,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI5.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.009, 0.009, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI4.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.009, 0.009, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES\HQTREE_MULTI3_TALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 3, 7, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.055, 0.055, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES\HQTREE_MULTI3_TALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 3, 7, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.04, 0.055, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES\HQTREE_MULTI1_SHORT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1.5, 3, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.03, 0.03, 0.0001), }, --## 3b_biome_dist
 					}, }, --## 3f_biome_end
 
@@ -695,7 +695,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI5.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.009, 0.009, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI4.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.009, 0.009, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES\HQTREE_MULTI3_TALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 4, 9, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.055, 0.055, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES\HQTREE_MULTI3_TALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 4, 9, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.04, 0.055, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES\HQTREE_MULTI1_SHORT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 2, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.03, 0.03, 0.0001), }, --## 3b_biome_dist
 					}, }, --## 3f_biome_end
 
@@ -734,9 +734,9 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI4.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.0025, 0.0035, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI2.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.0025, 0.0035, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI1.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 0.6, 1, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.001, 0.001, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONESNOW.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.008, 0.008, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGESNOW.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.008, 0.008, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPSNOW.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.008, 0.008, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONESNOW.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.006, 0.008, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGESNOW.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.006, 0.008, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPSNOW.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.006, 0.008, 0.0001), }, --## 3b_biome_dist
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_40.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_41.MBIN"}, }, --## 3a1_biome
@@ -830,9 +830,9 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI4.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.0025, 0.0035, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI2.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.0025, 0.0035, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI1.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 0.6, 1, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.001, 0.001, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONESNOW.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.008, 0.008, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGESNOW.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.008, 0.008, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPSNOW.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.008, 0.008, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONESNOW.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.006, 0.008, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGESNOW.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.006, 0.008, 0.0001), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPSNOW.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.8, 1.5, 1, 1, 0, 0, 180, 150, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.006, 0.008, 0.0001), }, --## 3b_biome_dist
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_51.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_52.MBIN"}, }, --## 3a1_biome
@@ -928,7 +928,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/GIANTROCKS/GIANTROCK1.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 180, 1, 1, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.12, 0.001, 0.001, 1), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/GIANTROCKS/GIANTROCK2.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 0.75, 1, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.12, 0.003, 0.003, 1), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/GIANTROCKS/GIANTROCK2.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 0.75, 1, 1, 1, 0, 0, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.12, 0.001, 0.003, 1), }, --## 3b_biome_dist
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_65.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_66.MBIN"}, }, --## 3a1_biome
@@ -953,8 +953,8 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI5.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.009, 0.009, 0.0001), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI4.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 10, 14, 20, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.009, 0.009, 0.0001), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TALLPINETREES/TALLPINETREEBIG.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1.5, 2.2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.13, 0.019, 0.019, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TALLPINETREES/TALLPINETREESMALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.14, 0.14, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TALLPINETREES/TALLPINETREEBIG.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 3, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.13, 0.019, 0.019, 1), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TALLPINETREES/TALLPINETREESMALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 2, 2.5, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.044, 0.14, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_68.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_69.MBIN"}, }, --## 3a1_biome
@@ -1223,7 +1223,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_NORMAL.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 6.5, 7, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.02, 0, 3), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_NORMAL.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 6.5, 7, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.01, 0, 3), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_BLUE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 15, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.095, 0.095, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1231,7 +1231,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_NORMAL.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 6.5, 7, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.02, 0, 3), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_NORMAL.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 6.5, 7, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.01, 0, 3), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_BLUE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 15, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.095, 0.095, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1240,7 +1240,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_RED.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 9, 1, 1, 0, 8, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.01, 0.01, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_ORANGE.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1.6, 3.2, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.025, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_ORANGE.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1.6, 2.2, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.015, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_6.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_7.MBIN"}, }, --## 3a1_biome
@@ -1271,7 +1271,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE1_ORANGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.07, 0.12, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.07, 0.07, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWTREESCOL/COLTREE1_ORANGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.07, 0.12, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.07, 0.0001), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE3_RED.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.05, 0.1, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.08, 0.08, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1303,8 +1303,8 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_1_BIG.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1.5, 2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.21, 0.004, 0, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI3_TALL.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1, 1.5, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.01, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_1_BIG.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1, 1.25, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.21, 0.004, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI3_TALL.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 0.7, 1, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.01, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_14.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_15.MBIN"}, }, --## 3a1_biome
@@ -1319,8 +1319,8 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI1_SHORT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 2, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.03, 0.03, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_2.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.074, 0.074, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI1_SHORT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 2, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.06, 0.03, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_2.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.034, 0.074, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_16.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_17.MBIN"}, }, --## 3a1_biome
@@ -1328,7 +1328,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_1_BIG.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 2, 2.5, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.21, 0.004, 0, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO1.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.06, 0.06, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO1.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.06, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_17.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_18.MBIN"}, }, --## 3a1_biome
@@ -1386,7 +1386,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE3_RED.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.05, 0.1, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.08, 0.08, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 0.11, 0.12, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.21, 0.004, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 0.11, 0.12, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.21, 0.004, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_24.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_26.MBIN"}, }, --## 3a1_biome
@@ -1401,7 +1401,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE1_ORANGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.07, 0.12, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.07, 0.07, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWTREESCOL/COLTREE1_ORANGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.07, 0.12, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.07, 0.0001), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE5_BLUE.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 0.075, 0.12, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.012, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1409,8 +1409,8 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO2_WIDE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1, 1.5, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.005, 0, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI3_TALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 4, 9, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.055, 0.055, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO2_WIDE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1, 1.2, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.005, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI3_TALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 4, 9, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.055, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_28.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_31.MBIN"}, }, --## 3a1_biome
@@ -1448,7 +1448,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE4_UV.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.03, 0.08, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.05, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWTREESCOL/COLTREE4_UV.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.03, 0.08, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.05, 0.0001), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE1_ORANGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.07, 0.12, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.07, 0.07, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1464,7 +1464,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE1_ORANGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.07, 0.12, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.07, 0.07, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWTREESCOL/COLTREE1_ORANGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.07, 0.12, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.07, 0.0001), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE3_RED.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.05, 0.1, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.08, 0.08, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1473,14 +1473,14 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE1_ORANGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.07, 0.12, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.07, 0.07, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.11, 0.13, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.055, 0.055, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.11, 0.13, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.055, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_38.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_40.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.04, 0.06, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.04, 0.04, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.04, 0.06, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.04, 0.04, 0.0001), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE4_UV.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.03, 0.08, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.05, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1513,14 +1513,14 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_RED.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.9, 8, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.265, 0.006, 0, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_GREEN.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 2, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.02, 0, 3), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_GREEN.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1, 2, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.01, 0, 3), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_44.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_45.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_ORANGE.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1.6, 2.4, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.02, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_ORANGE.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1.6, 2.4, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.012, 0, 2), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.9, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.265, 0.006, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1529,15 +1529,15 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE1_ORANGE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.07, 0.12, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.07, 0.07, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.075, 0.12, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.265, 0.006, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.075, 0.12, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.265, 0.006, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_46.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_47.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_1_BIG.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1, 1.5, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.21, 0.004, 0, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO2_WIDE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 0.75, 1.25, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.01, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_1_BIG.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1, 1.2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.21, 0.004, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO2_WIDE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 0.75, 1.1, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.005, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_47.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_48.MBIN"}, }, --## 3a1_biome
@@ -1561,7 +1561,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_BLUE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 30, 1, 2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.055, 0.055, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 2, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.025, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1, 1.3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.012, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_50.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_51.MBIN"}, }, --## 3a1_biome
@@ -1576,7 +1576,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE1_ORANGE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 0.105, 0.13, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.012, 0, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.05, 0.1, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.08, 0.08, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.05, 0.1, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.08, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_52.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_53.MBIN"}, }, --## 3a1_biome
@@ -1584,7 +1584,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESMAPLE/MAPLETREE_GREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 9, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.011, 0.011, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESMAPLE/MAPLETREE_NORMAL.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 2, 2.5, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.02, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESMAPLE/MAPLETREE_NORMAL.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1, 1.5, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.01, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_53.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_54.MBIN"}, }, --## 3a1_biome
@@ -1599,7 +1599,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_ORANGE.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1.6, 2.4, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.02, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_ORANGE.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1, 1.3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.012, 0, 2), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_BLUE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 10, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.012, 0.012, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1607,8 +1607,8 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO1.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.06, 0.06, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO2_WIDE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 3, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.05, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO1.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.06, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO2_WIDE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 3, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.04, 0.05, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_56.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_57.MBIN"}, }, --## 3a1_biome
@@ -1624,14 +1624,14 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE4_UV.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 0.045, 0.1, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.01, 0, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.06, 0.09, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.03, 0.06, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.06, 0.09, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.03, 0.06, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_58.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_60.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_PURPLE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 2, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.015, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_PURPLE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 2, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.008, 0, 2), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_NORMAL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 2.5, 3, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.06, 0.06, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1666,15 +1666,15 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE4_UV.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.03, 0.08, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.05, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE5_BLUE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.1, 0.13, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.265, 0.003, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWTREESCOL/COLTREE5_BLUE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 50, 0.1, 0.13, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.265, 0.003, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_65.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_66.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_1_BIG.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1, 1.25, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.21, 0.004, 0, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_2.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.9, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.265, 0.006, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_2.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1, 1.25, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.21, 0.004, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_1_BIG.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.9, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.265, 0.006, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_66.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_67.MBIN"}, }, --## 3a1_biome
@@ -1682,7 +1682,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI1_SHORT.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.25, 1.5, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.01, 0, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO1.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.06, 0.06, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO1.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.06, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_67.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_68.MBIN"}, }, --## 3a1_biome
@@ -1699,7 +1699,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE4_UV.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 7, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.06, 0.12, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWTREESCOL/COLTREE4_UV.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 7, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.12, 0.0001), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE1_ORANGE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 0.105, 0.12, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.012, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1708,14 +1708,14 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_NORMAL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 30, 1, 2, 1, 1, 0, 13, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.045, 0.045, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_PURPLE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.025, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_PURPLE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 0.7, 1.1, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.015, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_70.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_71.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_2.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.074, 0.074, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_2.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.045, 0.074, 0.0001), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO1.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 2, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.015, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1723,7 +1723,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TALLPINETREES/TALLPINETREESMALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.9, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.5, 0, 3), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TALLPINETREES/TALLPINETREESMALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.9, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.08, 0, 3), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TALLPINETREES/TALLPINETREEBIG.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1.5, 2.2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.13, 0.019, 0.019, 1), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1731,7 +1731,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_BLUE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 2, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.02, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_BLUE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 2, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.005, 0, 2), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESNORMAL/NORMALTREE_RED.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 60, 1.5, 2.7, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.05, 1), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1754,8 +1754,8 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI1_SHORT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 2, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.03, 0.03, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_2.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.074, 0.074, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_2.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.03, 0.03, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI1_SHORT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 2, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.054, 0.074, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_77.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_78.MBIN"}, }, --## 3a1_biome
@@ -1763,14 +1763,14 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE3_RED.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 0.075, 0.1, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.012, 0, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 7, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.03, 0.12, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWTREESCOL/COLTREE2_PINK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 7, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.03, 0.12, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_78.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_79.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_PURPLE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 4, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.015, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_PURPLE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.2, 1.8, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.01, 0, 2), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_NORMAL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 30, 1, 2, 1, 1, 0, 13, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.045, 0.045, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1778,8 +1778,8 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI1_SHORT.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 2, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.03, 0.03, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI4_MED.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1.6, 2.2, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.01, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI4_MED.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.03, 0.03, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI1_SHORT.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 1.6, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.01, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_81.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_82.MBIN"}, }, --## 3a1_biome
@@ -1787,14 +1787,14 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO1.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 2, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.3, 0.01, 0, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI4_MED.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 3, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.035, 0.035, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES/HQTREE_MULTI4_MED.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 3, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.035, 0.035, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_82.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_83.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_PURPLE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 2, 4, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.015, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_PURPLE.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 0.7, 1.2, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.014, 0, 2), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_GREEN.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 17, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.055, 0.055, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1803,7 +1803,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TALLPINETREES/TALLPINETREEBIG.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1.5, 2.2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.13, 0.019, 0.019, 1), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TALLPINETREES/TALLPINETREESMALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.14, 0.14, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TALLPINETREES/TALLPINETREESMALL.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.084, 0.14, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_84.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_85.MBIN"}, }, --## 3a1_biome
@@ -1818,8 +1818,8 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO1.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.06, 0.06, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_2.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.074, 0.074, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("CUSTOMMODELS/NEWHQTREES/HQTREE_BAMBOO1.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 2, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.05, 0.06, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/NEWHQTREES/HQTREE_GREEN_2.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 4, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.044, 0.074, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_86.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_87.MBIN"}, }, --## 3a1_biome
@@ -1877,7 +1877,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_RED.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.9, 8, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.265, 0.006, 0, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_GREEN.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 3, 4, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.02, 0, 3), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_GREEN.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 2, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.007, 0, 3), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_93.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_94.MBIN"}, }, --## 3a1_biome
@@ -1901,14 +1901,14 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESPINE/PINETREE_PURPLE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.9, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.265, 0.006, 0, 2), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESPINE/PINETREE_RED.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.025, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESPINE/PINETREE_RED.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 2, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.0075, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_96.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_97.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESPALM/PALMTREE_NORMAL.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.02, 0, 3), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESPALM/PALMTREE_NORMAL.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.006, 0, 3), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESPALM/PALMTREE_BLUE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 0.9, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.02, 0, 3), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1917,14 +1917,14 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESPALM/PALMTREE_RED.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 14, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.1, 0.1, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESPALM/PALMTREE_YELLOW.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 4, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.025, 0, 2), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESPALM/PALMTREE_YELLOW.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 4, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.4, 0.015, 0, 2), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_98.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_99.MBIN"}, }, --## 3a1_biome
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_NORMAL.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 2.5, 3, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.02, 0, 3), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_NORMAL.SCENE.MBIN", "FOREST", -1, 128, 0, 50, 2.5, 3, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.008, 0, 3), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESBIRCH/BIRCHTREE_RED.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 60, 1, 17, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.065, 0.065, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
@@ -1940,7 +1940,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESPALM/PALMTREE_NORMAL.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 3, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.02, 0, 3), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESPALM/PALMTREE_NORMAL.SCENE.MBIN", "FOREST", -1, 128, 0, 60, 1.5, 2, 1, 1, 0, 5, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.2, 0.009, 0, 3), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("CUSTOMMODELS/TREESPALM/PALMTREE_PURPLE.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 30, 1, 8, 1, 1, 0, 10, 180, 0, 0, "TRUE", "TRUE", "FALSE", "FALSE", 0.18, 0.075, 0.075, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
