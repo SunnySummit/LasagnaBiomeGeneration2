@@ -86,8 +86,6 @@ navigate to the 'Releases' tab ([or click here](https://github.com/SunnySummit/L
 
 # more screenshots
 
-![image](https://i.imgur.com/oDZDLpW.jpeg)
-
 ![image](https://i.imgur.com/BDVyJJT.jpeg)
 
 ![image](https://i.imgur.com/XpKkaJ8.jpeg)
