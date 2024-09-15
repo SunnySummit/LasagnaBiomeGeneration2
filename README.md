@@ -3,7 +3,7 @@
 
 A giant planet generation mod for No Man's Sky. Includes PAK mods & LUA scripts.
 
-![thumbnail](https://i.imgur.com/brZBg1X.jpeg)
+![main image](https://i.imgur.com/fXwLiAF.jpeg)
 
 **compatible with:** worlds part 1 - Aquarius
 
@@ -87,8 +87,6 @@ navigate to the 'Releases' tab ([or click here](https://github.com/SunnySummit/L
 	-Stylized pine tree pack by W_illness - https://sketchfab.com/3d-models/stylized-pine-tree-pack-46ac3c1a4c3645b1984a97568db54c5d License: CC Attribution 
 
 # more screenshots
-
-![image](https://i.imgur.com/oDZDLpW.jpeg)
 
 ![image](https://i.imgur.com/BDVyJJT.jpeg)
 
