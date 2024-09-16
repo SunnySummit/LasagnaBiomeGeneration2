@@ -33,119 +33,6 @@ local PlanetLODMultiplier = 3		--planet lod distance multiplier
 
 
 --This adds the exml "context" for each model, i.e. the max scale.
-function AddDistantProp(modelPath, placem, minHeight, maxHeight, minAngle, maxAngle, minScale, maxScale, minScaleY, maxScaleY, patchEdgeSc, maxRotation, maxYRotation, maxRaise, maxLower, destroyableByShip, destroyableByTerrEdit, isFloatingIsland, creatureCanEat, coverage, flatDensity, slopeDensity, slopeMultiplier)
-
-maxRaise = 0
-maxLower = 0
-isFloatingIsland = "FALSE"
-
-return [[
-      <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Single" />
-        <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="]] .. modelPath .. [[" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers">
-            </Property>
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="]] .. placem .. [[" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="Normal" />
-        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
-        <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="]] .. minHeight .. [[" />
-        <Property name="MaxHeight" value="]] .. maxHeight .. [[" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="]] .. minAngle .. [[" />
-        <Property name="MaxAngle" value="]] .. maxAngle .. [[" />
-        <Property name="MatchGroundColour" value="False" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="False" />
-        <Property name="MinScale" value="]] .. minScale .. [[" />
-        <Property name="MaxScale" value="]] .. maxScale .. [[" />
-        <Property name="MinScaleY" value="]] .. minScaleY .. [[" />
-        <Property name="MaxScaleY" value="]] .. maxScaleY .. [[" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="]] .. patchEdgeSc .. [[" />
-        <Property name="MaxXZRotation" value="]] .. maxRotation .. [[" />
-        <Property name="MaxYRotation" value="]] .. maxYRotation .. [[" />
-        <Property name="MaxRaise" value="]] .. maxRaise .. [[" />
-        <Property name="MaxLower" value="]] .. maxLower .. [[" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="True" />
-        <Property name="CollideWithPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="]] .. destroyableByShip .. [[" />
-        <Property name="DestroyedByTerrainEdit" value="]] .. destroyableByTerrEdit .. [[" />
-        <Property name="IsFloatingIsland" value="]] .. isFloatingIsland .. [[" />
-        <Property name="InvisibleToCamera" value="False" />
-        <Property name="CreaturesCanEat" value="]] .. creatureCanEat .. [[" />
-        <Property name="ShearWindStrength" value="0" />
-		<Property name="SupportsScanToReveal" value="False" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="]] .. coverage .. [[" />
-          <Property name="FlatDensity" value="]] .. flatDensity .. [[" />
-          <Property name="SlopeDensity" value="]] .. slopeDensity .. [[" />
-          <Property name="SlopeMultiplier" value="]] .. slopeMultiplier .. [[" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="]] .. coverage .. [[" />
-            <Property name="FlatDensity" value="]] .. flatDensity .. [[" />
-            <Property name="SlopeDensity" value="]] .. slopeDensity .. [[" />
-            <Property name="SlopeMultiplier" value="]] .. slopeMultiplier .. [[" />
-            <Property name="MaxRegionRadius" value="3" />
-            <Property name="MaxImposterRadius" value="99" />
-            <Property name="FadeOutStartDistance" value="9999" />
-            <Property name="FadeOutEndDistance" value="9999" />
-            <Property name="FadeOutOffsetDistance" value="0" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
-              <Property value="500" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-]]
-end
-
-
---This adds the exml "context" for each model, i.e. the max scale.
 function AddLandmarkProp(modelPath, placem, minHeight, maxHeight, minAngle, maxAngle, minScale, maxScale, minScaleY, maxScaleY, patchEdgeSc, maxRotation, maxYRotation, maxRaise, maxLower, destroyableByShip, destroyableByTerrEdit, isFloatingIsland, creatureCanEat, coverage, flatDensity, slopeDensity, slopeMultiplier)
 
 if flatDensity > 0.009 then
@@ -2447,10 +2334,10 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("CUSTOMMODELS/BUILDINGSCIFI/BUILDINGSCIFI8.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 10, 16, 16, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.001, 0.001, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("CUSTOMMODELS/BUILDINGSCIFI/BUILDINGSCIFI6.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 10, 16, 16, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.001, 0.001, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("CUSTOMMODELS/BUILDINGSCIFI/BUILDINGSCIFI9.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 10, 16, 16, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.001, 0.001, 0.0001), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("CUSTOMMODELS/BUILDINGSCIFI/BUILDINGSCIFI5.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 10, 16, 16, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.001, 0.001, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS/BUILDINGSCIFI/BUILDINGSCIFI8.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 10, 16, 16, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.001, 0.001, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS/BUILDINGSCIFI/BUILDINGSCIFI6.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 10, 16, 16, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.001, 0.001, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS/BUILDINGSCIFI/BUILDINGSCIFI9.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 10, 16, 16, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.001, 0.001, 0.0001), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("CUSTOMMODELS/BUILDINGSCIFI/BUILDINGSCIFI5.SCENE.MBIN", "FLORACLUMP", -128, -25, 0, 10, 16, 16, 1, 1, 0, 0, 180, 0, 0, "FALSE", "FALSE", "FALSE", "FALSE", 0.18, 0.001, 0.001, 0.0001), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER3/BIOME_47.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER3/BIOME_48.MBIN"}, }, --## 3a1_biome
