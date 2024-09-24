@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (5.12.0.1)-->
+<Data template="GcBiomeData">
+  <Property name="TextureFile" value="METADATA/SIMULATION/SOLARSYSTEM/TEXTURES/SWAMP.MBIN" />
+  <Property name="OverlayFile" value="METADATA/SIMULATION/SOLARSYSTEM/OVERLAYS/TEST.MBIN" />
+  <Property name="TileTypesFile" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SWAMP/SWAMPTILETYPES.MBIN" />
+  <Property name="ColourPaletteFile" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SWAMP/SWAMPCOLOURPALETTES.MBIN" />
+  <Property name="LegacyColourPaletteFile" value="" />
+  <Property name="MiningSubstance1" value="GcMiningSubstanceData.xml">
+    <Property name="SubstanceCategory" value="GcRealitySubstanceCategory.xml">
+      <Property name="SubstanceCategory" value="Earth" />
+    </Property>
+    <Property name="UseRarity" value="True" />
+    <Property name="Rarity" value="GcRarity.xml">
+      <Property name="Rarity" value="Common" />
+    </Property>
+  </Property>
+  <Property name="MiningSubstance2" value="GcMiningSubstanceData.xml">
+    <Property name="SubstanceCategory" value="GcRealitySubstanceCategory.xml">
+      <Property name="SubstanceCategory" value="Earth" />
+    </Property>
+    <Property name="UseRarity" value="True" />
+    <Property name="Rarity" value="GcRarity.xml">
+      <Property name="Rarity" value="Common" />
+    </Property>
+  </Property>
+  <Property name="MiningSubstance3" value="GcMiningSubstanceData.xml">
+    <Property name="SubstanceCategory" value="GcRealitySubstanceCategory.xml">
+      <Property name="SubstanceCategory" value="Earth" />
+    </Property>
+    <Property name="UseRarity" value="True" />
+    <Property name="Rarity" value="GcRarity.xml">
+      <Property name="Rarity" value="Common" />
+    </Property>
+  </Property>
+  <Property name="FuelMultiplier" value="1" />
+  <Property name="Water" value="GcPlanetWaterData.xml">
+    <Property name="ColourIndex" value="0" />
+    <Property name="WaterStrength" value="0.1" />
+    <Property name="WaterColourStrength" value="0.1" />
+    <Property name="WaterMultiplyStrength" value="0.1" />
+    <Property name="WaterMultiplyMax" value="0.1" />
+    <Property name="WaterRoughness" value="0" />
+    <Property name="FresnelPower" value="5" />
+    <Property name="FresnelMin" value="0.2" />
+    <Property name="FresnelMax" value="0.8" />
+    <Property name="Wave1Scale" value="0.001" />
+    <Property name="Wave1Height" value="1" />
+    <Property name="Wave1Speed" value="1" />
+    <Property name="Wave2Scale" value="0.002" />
+    <Property name="Wave2Height" value="1" />
+    <Property name="Wave2Speed" value="1" />
+    <Property name="NormalMap1Scale" value="0" />
+    <Property name="NormalMap1Speed" value="0" />
+    <Property name="NormalMap2Scale" value="0" />
+    <Property name="NormalMap2Speed" value="0" />
+    <Property name="FoamFadeHeight" value="10" />
+    <Property name="Foam1Scale" value="0" />
+    <Property name="Foam1Speed" value="0" />
+    <Property name="Foam2Scale" value="0" />
+    <Property name="Foam2Speed" value="0" />
+    <Property name="HeavyAir" value="GcPlanetHeavyAirData.xml">
+      <Property name="Filename" value="" />
+      <Property name="Colours">
+        <Property value="GcHeavyAirColourData.xml">
+          <Property name="Colour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="Colour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+        </Property>
+        <Property value="GcHeavyAirColourData.xml">
+          <Property name="Colour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="Colour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+        </Property>
+        <Property value="GcHeavyAirColourData.xml">
+          <Property name="Colour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="Colour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+        </Property>
+        <Property value="GcHeavyAirColourData.xml">
+          <Property name="Colour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="Colour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+        </Property>
+        <Property value="GcHeavyAirColourData.xml">
+          <Property name="Colour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="Colour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+  <Property name="ExternalObjectLists">
+    <Property value="GcExternalObjectListOptions.xml">
+      <Property name="Name" value="PLUMGEN_STUFF" />
+      <Property name="ResourceHint" value="" />
+      <Property name="ResourceHintIcon" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="SeasonalProbabilityOverride" value="1" />
+      <Property name="TileType" value="GcTerrainTileType.xml">
+        <Property name="TileType" value="Base" />
+      </Property>
+      <Property name="AllowLimiting" value="False" />
+      <Property name="ChooseUsingLifeLevel" value="False" />
+      <Property name="Options">
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_101_SWAMP_RADIOACTIVE_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_108_SWAMP_WEIRD_TOXIC.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_10_SWAMP_LUSH_INDUSTRIAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_111_SWAMP_SCORCHED_INDUSTRIAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_121_HUGE_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_126_SWAMP_BARREN_FROZEN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_131_SWAMP_RADIOACTIVE_LIVINGSHIP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_136_SWAMP_DEAD_LAVA_INDUSTRIAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_146_SWAMP_LAVA_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_148_SWAMP_SCORCHED_TOXIC.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_162_SWAMP_DEAD_LAVA_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_188_LUSH_DEAD_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_18_SWAMP_TOXIC_LIVINGSHIP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_1_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_200_SCORCHED_HUGE_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_207_SWAMP_DEAD_SCORCHED.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_210_SWAMP_WEIRD_BARREN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_214_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_220_HUGE_DEAD_SWAMP_INDUSTRIAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_222_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_227_HUGE_DEAD_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_229_SWAMP_WEIRD_INDUSTRIAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_233_SWAMP_LUSH_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_237_SWAMP_LUSH_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_23_SWAMP_BARREN_INDUSTRIAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_241_SWAMP_FROZEN_LIVINGSHIP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_248_SWAMP_LUSH.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_254_SWAMP_LAVA_FROZEN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_275_SWAMP_LIVINGSHIP_FROZEN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_284_HUGE_DEAD_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_285_SWAMP_FROZEN_LIVINGSHIP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_28_HUGE_SWAMP_TOXIC.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_291_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_296_SCORCHED_HUGE_SWAMP_TOXIC.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_297_SWAMP_INDUSTRIAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_2_SCORCHED_HUGE_DEAD_SWAMP_FROZEN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_300_SWAMP_SCORCHED.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_30_HUGE_SWAMP_SCORCHED.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_32_SWAMP_WEIRD_RADIOACTIVE.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_33_SWAMP_RADIOACTIVE.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_37_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_50_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_64_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SHAIDAK_EXP/BIOME_71_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_124_ROCKY_SWAMP_INDUSTRIAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_145_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_18_SWAMP_FROZEN_BARREN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_191_NOXIOUS_WEIRD_DEAD_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_201_LUSH_SWAMP_INDUSTRIAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_212_LIVINGSHIP_SWAMP_DEAD_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_220_WEIRD_BARREN_DEAD_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_225_DEAD_SWAMP_FROZEN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_244_BARREN_SWAMP_FROZEN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_31_SWAMP_TOXIC.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_339_DEAD_SWAMP_BARREN_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_350_FROZEN_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_370_SWAMP_SCORCHED_LIVINGSHIP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_371_SWAMP_WEIRD_BARREN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_391_HUGE_DESOLATE_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_401_NOXIOUS_FROZEN_DEAD_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_406_DEAD_SWAMP_LAVA.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_412_SWAMP_IRRADIATED_LUSH.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_430_DEAD_SWAMP_WEIRD_RADIOACTIVE.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_434_SWAMP_BARREN_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_462_DEAD_SWAMP_WEIRD_SCORCHED.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_470_WEIRD_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_473_IRRADIATED_FROZEN_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_475_RADIOACTIVE_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_477_DEAD_SWAMP_WEIRD_SCORCHED.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_55_FROZEN_SWAMP_TOXIC.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_68_SWAMP_RADIOACTIVE_NOXIOUS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_71_BARREN_LIVINGSHIP_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_82_SWAMP_WEIRD_LUSH.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_92_DEAD_SWAMP_NOXIOUS_BARREN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_93_TOXIC_SWAMP_INDUSTRIAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_96_BURNT_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_137_SWAMP_NOXIOUS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_168_SWAMP_LUSH_BARREN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_246_SWAMP_LUSH_SUBZERO_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_278_SWAMP_LUSH_FLORAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_293_SWAMP_FLORAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_160_TOXIC_HUGE_DEAD_SWAMP_LIVINGSHIP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_168_SWAMP_IRRADIATED_FLORAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_172_HUGE_BURNT_DEAD_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_184_FROZEN_WEIRD_DEAD_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_189_DEAD_SWAMP_LUSH_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_192_LUSH_SWAMP_RADIOACTIVE.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_198_SWAMP_WEIRD_FROZEN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_20_SWAMP_BARREN_SUBZERO.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_30_WEIRD_HUGE_SWAMP_DEAD_LAVA.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_39_RADIOACTIVE_DEAD_SWAMP_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_55_WEIRD_DEAD_SWAMP_TOXIC.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_60_SWAMP_INDUSTRIAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_63_NOXIOUS_WEIRD_DEAD_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_76_SWAMP_SCORCHED.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_78_TOXIC_SWAMP_FROZEN.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectListOptions.xml">
+      <Property name="Name" value="PLUMGEN_STUFF" />
+      <Property name="ResourceHint" value="" />
+      <Property name="ResourceHintIcon" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="SeasonalProbabilityOverride" value="1" />
+      <Property name="TileType" value="GcTerrainTileType.xml">
+        <Property name="TileType" value="Base" />
+      </Property>
+      <Property name="AllowLimiting" value="False" />
+      <Property name="ChooseUsingLifeLevel" value="False" />
+      <Property name="Options">
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FULLSAFE.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectListOptions.xml">
+      <Property name="Name" value="PLUMGEN_STUFF" />
+      <Property name="ResourceHint" value="" />
+      <Property name="ResourceHintIcon" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="SeasonalProbabilityOverride" value="1" />
+      <Property name="TileType" value="GcTerrainTileType.xml">
+        <Property name="TileType" value="Base" />
+      </Property>
+      <Property name="AllowLimiting" value="False" />
+      <Property name="ChooseUsingLifeLevel" value="False" />
+      <Property name="Options">
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/LEVELONEOBJECTS/FULLSAFE.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectListOptions.xml">
+      <Property name="Name" value="PLUMGEN_STUFF" />
+      <Property name="ResourceHint" value="" />
+      <Property name="ResourceHintIcon" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="SeasonalProbabilityOverride" value="1" />
+      <Property name="TileType" value="GcTerrainTileType.xml">
+        <Property name="TileType" value="Base" />
+      </Property>
+      <Property name="AllowLimiting" value="False" />
+      <Property name="ChooseUsingLifeLevel" value="False" />
+      <Property name="Options">
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/CRYSTALS/FULL.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectListOptions.xml">
+      <Property name="Name" value="PLUMGEN_STUFF" />
+      <Property name="ResourceHint" value="" />
+      <Property name="ResourceHintIcon" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="SeasonalProbabilityOverride" value="1" />
+      <Property name="TileType" value="GcTerrainTileType.xml">
+        <Property name="TileType" value="Base" />
+      </Property>
+      <Property name="AllowLimiting" value="False" />
+      <Property name="ChooseUsingLifeLevel" value="False" />
+      <Property name="Options">
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/TENTACLEPLANT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/SPOREVENTPLANT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FLYTRAPPLANT.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectListOptions.xml">
+      <Property name="Name" value="PLUMGEN_STUFF" />
+      <Property name="ResourceHint" value="" />
+      <Property name="ResourceHintIcon" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="SeasonalProbabilityOverride" value="1" />
+      <Property name="TileType" value="GcTerrainTileType.xml">
+        <Property name="TileType" value="Base" />
+      </Property>
+      <Property name="AllowLimiting" value="False" />
+      <Property name="ChooseUsingLifeLevel" value="False" />
+      <Property name="Options">
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/ROCK/BUILDINGDRESSING.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+  <Property name="WeatherOptions">
+    <Property name="Yellow" value="GcWeatherWeightings.xml">
+      <Property name="WeatherWeightings">
+        <Property name="Clear" value="0" />
+        <Property name="Dust" value="0" />
+        <Property name="Humid" value="0" />
+        <Property name="Snow" value="0" />
+        <Property name="Toxic" value="0.3" />
+        <Property name="Scorched" value="0" />
+        <Property name="Radioactive" value="0" />
+        <Property name="RedWeather" value="0" />
+        <Property name="GreenWeather" value="0" />
+        <Property name="BlueWeather" value="0" />
+        <Property name="Swamp" value="1" />
+        <Property name="Lava" value="0" />
+        <Property name="Bubble" value="0" />
+        <Property name="Weird" value="0" />
+        <Property name="Fire" value="0" />
+        <Property name="ClearCold" value="0" />
+      </Property>
+    </Property>
+    <Property name="Green" value="GcWeatherWeightings.xml">
+      <Property name="WeatherWeightings">
+        <Property name="Clear" value="0" />
+        <Property name="Dust" value="0" />
+        <Property name="Humid" value="0" />
+        <Property name="Snow" value="0" />
+        <Property name="Toxic" value="0.3" />
+        <Property name="Scorched" value="0" />
+        <Property name="Radioactive" value="0" />
+        <Property name="RedWeather" value="0" />
+        <Property name="GreenWeather" value="0" />
+        <Property name="BlueWeather" value="0" />
+        <Property name="Swamp" value="1" />
+        <Property name="Lava" value="0" />
+        <Property name="Bubble" value="0" />
+        <Property name="Weird" value="0" />
+        <Property name="Fire" value="0" />
+        <Property name="ClearCold" value="0" />
+      </Property>
+    </Property>
+    <Property name="Blue" value="GcWeatherWeightings.xml">
+      <Property name="WeatherWeightings">
+        <Property name="Clear" value="0" />
+        <Property name="Dust" value="0" />
+        <Property name="Humid" value="0" />
+        <Property name="Snow" value="0" />
+        <Property name="Toxic" value="0.3" />
+        <Property name="Scorched" value="0" />
+        <Property name="Radioactive" value="0" />
+        <Property name="RedWeather" value="0" />
+        <Property name="GreenWeather" value="0" />
+        <Property name="BlueWeather" value="0" />
+        <Property name="Swamp" value="1" />
+        <Property name="Lava" value="0" />
+        <Property name="Bubble" value="0" />
+        <Property name="Weird" value="0" />
+        <Property name="Fire" value="0" />
+        <Property name="ClearCold" value="0" />
+      </Property>
+    </Property>
+    <Property name="Red" value="GcWeatherWeightings.xml">
+      <Property name="WeatherWeightings">
+        <Property name="Clear" value="0" />
+        <Property name="Dust" value="0" />
+        <Property name="Humid" value="0" />
+        <Property name="Snow" value="0" />
+        <Property name="Toxic" value="0.3" />
+        <Property name="Scorched" value="0" />
+        <Property name="Radioactive" value="0" />
+        <Property name="RedWeather" value="0" />
+        <Property name="GreenWeather" value="0" />
+        <Property name="BlueWeather" value="0" />
+        <Property name="Swamp" value="1" />
+        <Property name="Lava" value="0" />
+        <Property name="Bubble" value="0" />
+        <Property name="Weird" value="0" />
+        <Property name="Fire" value="0" />
+        <Property name="ClearCold" value="0" />
+      </Property>
+    </Property>
+    <Property name="Purple" value="GcWeatherWeightings.xml">
+      <Property name="WeatherWeightings">
+        <Property name="Clear" value="0" />
+        <Property name="Dust" value="0" />
+        <Property name="Humid" value="0" />
+        <Property name="Snow" value="0" />
+        <Property name="Toxic" value="0.3" />
+        <Property name="Scorched" value="0" />
+        <Property name="Radioactive" value="0" />
+        <Property name="RedWeather" value="0" />
+        <Property name="GreenWeather" value="0" />
+        <Property name="BlueWeather" value="0" />
+        <Property name="Swamp" value="1" />
+        <Property name="Lava" value="0" />
+        <Property name="Bubble" value="0" />
+        <Property name="Weird" value="0" />
+        <Property name="Fire" value="0" />
+        <Property name="ClearCold" value="0" />
+      </Property>
+    </Property>
+  </Property>
+  <Property name="WeatherChangeTime" value="Vector2f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
+  </Property>
+  <Property name="DarknessVariation" value="0.8" />
+  <Property name="CloudSettings" value="GcBiomeCloudSettings.xml">
+    <Property name="MinCoverage" value="0.3" />
+    <Property name="MaxCoverage" value="0.8" />
+    <Property name="MinCoverageVariance" value="-0.3" />
+    <Property name="MaxCoverageVariance" value="0.2" />
+    <Property name="MinCover" value="-0.6" />
+    <Property name="MaxCover" value="0.6" />
+    <Property name="MinVariance" value="0" />
+    <Property name="MaxVariance" value="0.6" />
+    <Property name="MinRateOfChange" value="0.05" />
+    <Property name="MaxRateOfChange" value="1.25" />
+    <Property name="MinRatio" value="1" />
+    <Property name="MaxRatio" value="1" />
+    <Property name="TendencyTowardsBeingCloudy" value="0.75" />
+    <Property name="StormCloudTopColour" value="Colour.xml">
+      <Property name="R" value="0.337" />
+      <Property name="G" value="0.337" />
+      <Property name="B" value="0.337" />
+      <Property name="A" value="1" />
+    </Property>
+    <Property name="StormCloudBottomColour" value="Colour.xml">
+      <Property name="R" value="0.333" />
+      <Property name="G" value="0.333" />
+      <Property name="B" value="0.333" />
+      <Property name="A" value="1" />
+    </Property>
+  </Property>
+  <Property name="Terrain" value="GcTerrainControls.xml">
+    <Property name="NoiseLayers">
+      <Property name="Base" value="1" />
+      <Property name="Hill" value="1" />
+      <Property name="Mountain" value="1" />
+      <Property name="Rock" value="1" />
+      <Property name="UnderWater" value="1" />
+      <Property name="Texture" value="0" />
+      <Property name="Elevation" value="1" />
+      <Property name="Continent" value="0" />
+    </Property>
+    <Property name="GridLayers">
+      <Property name="Small" value="0.75" />
+      <Property name="Large" value="0.75" />
+      <Property name="Resources_Heridium" value="1" />
+      <Property name="Resources_Iridium" value="1" />
+      <Property name="Resources_Copper" value="1" />
+      <Property name="Resources_Nickel" value="0" />
+      <Property name="Resources_Aluminium" value="0" />
+      <Property name="Resources_Gold" value="0" />
+      <Property name="Resources_Emeril" value="0" />
+    </Property>
+    <Property name="Features">
+      <Property name="River" value="1" />
+      <Property name="Crater" value="1" />
+      <Property name="Arches" value="1" />
+      <Property name="ArchesSmall" value="1" />
+      <Property name="Blobs" value="1" />
+      <Property name="BlobsSmall" value="1" />
+      <Property name="Substance" value="0" />
+    </Property>
+    <Property name="Caves">
+      <Property name="Underground" value="1" />
+    </Property>
+    <Property name="WaterActiveFrequency" value="0.9" />
+    <Property name="HighWaterActiveFrequency" value="0.5" />
+    <Property name="RockTileFrequency" value="0.25" />
+    <Property name="SubstanceTileFrequency" value="0.25" />
+    <Property name="ForceContinentalNoise" value="False" />
+  </Property>
+  <Property name="FilterOptions">
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="Default" />
+      </Property>
+      <Property name="Weight" value="1.5" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="Vintage" />
+      </Property>
+      <Property name="Weight" value="0.15" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="Barren" />
+      </Property>
+      <Property name="Weight" value="0.1" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="NewVibrant" />
+      </Property>
+      <Property name="Weight" value="0.05" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="NMSRetroA" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="NMSRetroB" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="NMSRetroC" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="NMSRetroD" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="NMSRetroE" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="NMSRetroF" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="NMSRetroG" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="Weird2" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="Weird4" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+  </Property>
+  <Property name="FloraLifeLocID" value="" />
+</Data>

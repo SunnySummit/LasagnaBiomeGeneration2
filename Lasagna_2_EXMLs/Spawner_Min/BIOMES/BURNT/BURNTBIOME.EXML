@@ -1,0 +1,1524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (5.12.0.1)-->
+<Data template="GcBiomeData">
+  <Property name="TextureFile" value="METADATA/SIMULATION/SOLARSYSTEM/TEXTURES/BURNT.MBIN" />
+  <Property name="OverlayFile" value="METADATA/SIMULATION/SOLARSYSTEM/OVERLAYS/TEST.MBIN" />
+  <Property name="TileTypesFile" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BURNT/BURNTTILETYPES.MBIN" />
+  <Property name="ColourPaletteFile" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BURNT/BURNTCOLOURPALETTES.MBIN" />
+  <Property name="LegacyColourPaletteFile" value="" />
+  <Property name="MiningSubstance1" value="GcMiningSubstanceData.xml">
+    <Property name="SubstanceCategory" value="GcRealitySubstanceCategory.xml">
+      <Property name="SubstanceCategory" value="Fuel" />
+    </Property>
+    <Property name="UseRarity" value="True" />
+    <Property name="Rarity" value="GcRarity.xml">
+      <Property name="Rarity" value="Common" />
+    </Property>
+  </Property>
+  <Property name="MiningSubstance2" value="GcMiningSubstanceData.xml">
+    <Property name="SubstanceCategory" value="GcRealitySubstanceCategory.xml">
+      <Property name="SubstanceCategory" value="Fuel" />
+    </Property>
+    <Property name="UseRarity" value="True" />
+    <Property name="Rarity" value="GcRarity.xml">
+      <Property name="Rarity" value="Common" />
+    </Property>
+  </Property>
+  <Property name="MiningSubstance3" value="GcMiningSubstanceData.xml">
+    <Property name="SubstanceCategory" value="GcRealitySubstanceCategory.xml">
+      <Property name="SubstanceCategory" value="Fuel" />
+    </Property>
+    <Property name="UseRarity" value="True" />
+    <Property name="Rarity" value="GcRarity.xml">
+      <Property name="Rarity" value="Common" />
+    </Property>
+  </Property>
+  <Property name="FuelMultiplier" value="1" />
+  <Property name="Water" value="GcPlanetWaterData.xml">
+    <Property name="ColourIndex" value="0" />
+    <Property name="WaterStrength" value="0.1" />
+    <Property name="WaterColourStrength" value="0.1" />
+    <Property name="WaterMultiplyStrength" value="0.1" />
+    <Property name="WaterMultiplyMax" value="0.1" />
+    <Property name="WaterRoughness" value="0" />
+    <Property name="FresnelPower" value="5" />
+    <Property name="FresnelMin" value="0.2" />
+    <Property name="FresnelMax" value="0.8" />
+    <Property name="Wave1Scale" value="0.001" />
+    <Property name="Wave1Height" value="1" />
+    <Property name="Wave1Speed" value="1" />
+    <Property name="Wave2Scale" value="0.002" />
+    <Property name="Wave2Height" value="1" />
+    <Property name="Wave2Speed" value="1" />
+    <Property name="NormalMap1Scale" value="0" />
+    <Property name="NormalMap1Speed" value="0" />
+    <Property name="NormalMap2Scale" value="0" />
+    <Property name="NormalMap2Speed" value="0" />
+    <Property name="FoamFadeHeight" value="10" />
+    <Property name="Foam1Scale" value="0" />
+    <Property name="Foam1Speed" value="0" />
+    <Property name="Foam2Scale" value="0" />
+    <Property name="Foam2Speed" value="0" />
+    <Property name="HeavyAir" value="GcPlanetHeavyAirData.xml">
+      <Property name="Filename" value="" />
+      <Property name="Colours">
+        <Property value="GcHeavyAirColourData.xml">
+          <Property name="Colour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="Colour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+        </Property>
+        <Property value="GcHeavyAirColourData.xml">
+          <Property name="Colour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="Colour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+        </Property>
+        <Property value="GcHeavyAirColourData.xml">
+          <Property name="Colour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="Colour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+        </Property>
+        <Property value="GcHeavyAirColourData.xml">
+          <Property name="Colour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="Colour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+        </Property>
+        <Property value="GcHeavyAirColourData.xml">
+          <Property name="Colour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="Colour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour1" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="ExtremeColour2" value="Colour.xml">
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
+            <Property name="A" value="1" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+  <Property name="ExternalObjectLists">
+    <Property value="GcExternalObjectListOptions.xml">
+      <Property name="Name" value="PLUMGEN_STUFF" />
+      <Property name="ResourceHint" value="" />
+      <Property name="ResourceHintIcon" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="SeasonalProbabilityOverride" value="1" />
+      <Property name="TileType" value="GcTerrainTileType.xml">
+        <Property name="TileType" value="Base" />
+      </Property>
+      <Property name="AllowLimiting" value="False" />
+      <Property name="ChooseUsingLifeLevel" value="False" />
+      <Property name="Options">
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_101_BURNT_FROZEN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_106_IRRADIATED_BURNT_SUBZERO.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_119_WEIRD_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_120_BARREN_WEIRD_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_128_HUGE_DESOLATE_SCORCHED_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_137_HUGE_BURNT_FROZEN_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_13_BARREN_BURNT_LIVINGSHIP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_164_WEIRD_RADIOACTIVE_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_167_HUGE_BURNT_WEIRD_DEAD_LAVA.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_169_ROCKY_BURNT_TOXIC.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_173_HUGE_BURNT_TOXIC.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_181_WEIRD_HUGE_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_192_HUGE_BURNT_RADIOACTIVE_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_230_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_279_WEIRD_FROZEN_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_317_HUGE_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_319_ROCKY_BURNT_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_324_SCORCHED_HUGE_BURNT_LIVINGSHIP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_375_HUGE_BURNT_WEIRD_LIVINGSHIP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_379_BARREN_LUSH_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_37_FROZEN_BURNT_TOXIC.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_39_BURNT_FROZEN_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_40_SUBZERO_BURNT_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_415_WEIRD_LUSH_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_416_BURNT_FROZEN_LUSH.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_46_WEIRD_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_485_HUGE_ROCKY_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_59_LIVINGSHIP_TOXIC_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_96_BURNT_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/ENV/BIOME_9_BURNT_RADIOACTIVE.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_102_RAINFOREST_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_103_RAINFOREST_LUSH_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_108_NOXIOUS_FLORAL_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_109_BARREN_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_10_LIVINGSHIP_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_112_FLORAL_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_115_ROCKY_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_116_WEIRD_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_118_INDUSTRIAL_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_119_RAINFOREST_SUBZERO_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_120_RAINFOREST_LUSH_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_122_RAINFOREST_LUSH_BURNT_SUBZERO.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_123_WEIRD_SUBZERO_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_124_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_127_ALIEN_RAINFOREST_BURNT_LUSH.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_128_BURNT_LUSH.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_129_RUINS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_132_WEIRD_LUSH_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_135_INDUSTRIAL_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_140_WEIRD_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_147_SUBZERO_WEIRD_LUSH_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_150_BARREN_WEIRD_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_161_HUGE_BURNT_SUBZERO.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_164_BURNT_SUBZERO.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_16_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_172_ALIEN_BARREN_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_173_HUGE_BURNT_BARREN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_174_DESOLATE_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_181_INDUSTRIAL_BARREN_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_182_SUBZERO_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_185_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_186_RAINFOREST_BURNT_NOXIOUS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_18_HUGE_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_193_BURNT_NOXIOUS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_201_RAINFOREST_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_205_NEVADA_BURNT_SUBZERO.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_210_BARREN_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_214_HUGE_BURNT_NOXIOUS_SUBZERO.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_217_RAINFOREST_LUSH_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_219_ROCKY_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_21_RAINFOREST_BARREN_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_221_BURNT_SUBZERO.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_225_WEIRD_BURNT_NOXIOUS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_230_WEIRD_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_233_RAINFOREST_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_234_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_235_RAINFOREST_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_246_SWAMP_LUSH_SUBZERO_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_247_RAINFOREST_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_248_SUBZERO_BARREN_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_249_HUGE_BURNT_NOXIOUS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_252_BURNT_NOXIOUS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_254_LUSH_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_25_WEIRD_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_260_LUSH_BURNT_RUINS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_262_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_268_RAINFOREST_LUSH_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_271_BURNT_NOXIOUS_RUINS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_272_WEIRD_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_273_INDUSTRIAL_SUBZERO_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_275_BURNT_NOXIOUS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_279_BURNT_LUSH.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_27_WEIRD_FLORAL_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_280_WEIRD_BURNT_NOXIOUS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_281_INDUSTRIAL_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_283_BURNT_FLORAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_285_BURNT_RUINS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_287_HUGE_ROCKY_LUSH_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_28_WEIRD_FLORAL_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_290_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_292_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_297_INDUSTRIAL_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_298_NEVADA_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_299_RAINFOREST_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_29_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_2_HUGE_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_31_LIVINGSHIP_SUBZERO_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_33_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_34_BURNT_FLORAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_35_LUSH_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_37_WEIRD_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_38_FROZEN_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_39_ROCKY_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_44_NOXIOUS_BURNT_LUSH.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_49_ALIEN_RAINFOREST_BURNT_RUINS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_53_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_56_NEVADA_BURNT_SUBZERO.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_59_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_60_WEIRD_BURNT_RUINS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_62_WEIRD_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_63_WEIRD_LUSH_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_65_BURNT_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_66_WEIRD_BARREN_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_67_BURNT_SUBZERO.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_68_WEIRD_LUSH_FLORAL_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_74_BURNT_BARREN_NOXIOUS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_76_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_80_RAINFOREST_BURNT_RUINS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_81_LUSH_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_83_RAINFOREST_LUSH_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_89_WEIRD_BURNT_NOXIOUS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_8_ROCKY_BARREN_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_93_BURNT_FLORAL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_94_BURNT_NOXIOUS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_95_NOXIOUS_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_97_FLORAL_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES/BIOME_9_WEIRD_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_116_HUGE_BURNT_WEIRD_BARREN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_152_ROCKY_BURNT_LIVINGSHIP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_169_BURNT_LIVINGSHIP_LUSH.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_172_HUGE_BURNT_DEAD_SWAMP.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_77_BURNT_BARREN.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_8_RADIOACTIVE_LIVINGSHIP_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_94_BURNT_RADIOACTIVE_WEIRD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_98_BARREN_BURNT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_1.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_10.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_100.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_11.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_12.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_13.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_14.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_15.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_16.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_17.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_18.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_19.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_2.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_20.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_21.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_22.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_23.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_24.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_26.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_27.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_28.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_3.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_31.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_32.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_33.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_34.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_35.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_36.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_37.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_38.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_4.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_40.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_41.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_42.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_43.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_44.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_45.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_46.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_47.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_48.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_49.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_5.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_50.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_51.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_52.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_53.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_54.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_55.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_56.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_57.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_58.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_6.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_60.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_61.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_62.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_64.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_65.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_66.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_67.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_68.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_69.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_7.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_70.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_71.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_73.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_74.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_75.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_76.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_77.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_78.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_79.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_8.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_81.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_82.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_83.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_84.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_85.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_86.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_87.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_88.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_89.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_9.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_90.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_91.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_92.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_93.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_94.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_95.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_96.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_97.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_98.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_DIST/BIOME_99.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_1.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_10.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_100.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_11.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_12.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_13.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_14.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_15.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_16.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_17.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_18.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_19.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_2.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_20.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_21.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_22.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_23.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_24.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_26.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_27.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_28.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_3.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_31.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_32.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_33.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_34.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_35.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_36.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_37.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_38.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_4.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_40.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_41.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_42.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_43.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_44.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_45.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_46.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_47.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_48.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_49.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_5.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_50.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_51.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_52.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_53.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_54.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_55.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_56.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_57.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_58.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_6.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_60.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_61.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_62.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_64.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_65.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_66.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_67.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_68.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_69.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_7.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_70.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_71.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_73.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_74.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_75.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_76.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_77.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_78.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_79.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_8.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_81.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_82.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_83.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_84.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_85.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_86.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_87.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_88.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_89.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_9.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_90.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_91.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_92.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_93.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_94.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_95.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_96.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_97.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_98.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CUSTOMBIOMES_LANDM/BIOME_99.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectListOptions.xml">
+      <Property name="Name" value="PLUMGEN_STUFF" />
+      <Property name="ResourceHint" value="" />
+      <Property name="ResourceHintIcon" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="SeasonalProbabilityOverride" value="1" />
+      <Property name="TileType" value="GcTerrainTileType.xml">
+        <Property name="TileType" value="Base" />
+      </Property>
+      <Property name="AllowLimiting" value="False" />
+      <Property name="ChooseUsingLifeLevel" value="False" />
+      <Property name="Options">
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FULL.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectListOptions.xml">
+      <Property name="Name" value="PLUMGEN_STUFF" />
+      <Property name="ResourceHint" value="" />
+      <Property name="ResourceHintIcon" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="SeasonalProbabilityOverride" value="1" />
+      <Property name="TileType" value="GcTerrainTileType.xml">
+        <Property name="TileType" value="Base" />
+      </Property>
+      <Property name="AllowLimiting" value="False" />
+      <Property name="ChooseUsingLifeLevel" value="False" />
+      <Property name="Options">
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/LEVELONEOBJECTS/FULL.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectListOptions.xml">
+      <Property name="Name" value="PLUMGEN_STUFF" />
+      <Property name="ResourceHint" value="" />
+      <Property name="ResourceHintIcon" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="SeasonalProbabilityOverride" value="1" />
+      <Property name="TileType" value="GcTerrainTileType.xml">
+        <Property name="TileType" value="Base" />
+      </Property>
+      <Property name="AllowLimiting" value="False" />
+      <Property name="ChooseUsingLifeLevel" value="False" />
+      <Property name="Options">
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/CRYSTALS/FULL.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectListOptions.xml">
+      <Property name="Name" value="PLUMGEN_STUFF" />
+      <Property name="ResourceHint" value="" />
+      <Property name="ResourceHintIcon" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="SeasonalProbabilityOverride" value="1" />
+      <Property name="TileType" value="GcTerrainTileType.xml">
+        <Property name="TileType" value="Base" />
+      </Property>
+      <Property name="AllowLimiting" value="False" />
+      <Property name="ChooseUsingLifeLevel" value="False" />
+      <Property name="Options">
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/TENTACLEPLANT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/SPOREVENTPLANT.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FLYTRAPPLANT.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+  <Property name="WeatherOptions">
+    <Property name="Yellow" value="GcWeatherWeightings.xml">
+      <Property name="WeatherWeightings">
+        <Property name="Clear" value="0" />
+        <Property name="Dust" value="0" />
+        <Property name="Humid" value="0" />
+        <Property name="Snow" value="0" />
+        <Property name="Toxic" value="0" />
+        <Property name="Scorched" value="3" />
+        <Property name="Radioactive" value="0" />
+        <Property name="RedWeather" value="0" />
+        <Property name="GreenWeather" value="0" />
+        <Property name="BlueWeather" value="0" />
+        <Property name="Swamp" value="0" />
+        <Property name="Lava" value="0" />
+        <Property name="Bubble" value="0" />
+        <Property name="Weird" value="0" />
+        <Property name="Fire" value="1" />
+        <Property name="ClearCold" value="0" />
+      </Property>
+    </Property>
+    <Property name="Green" value="GcWeatherWeightings.xml">
+      <Property name="WeatherWeightings">
+        <Property name="Clear" value="0" />
+        <Property name="Dust" value="0" />
+        <Property name="Humid" value="0" />
+        <Property name="Snow" value="0" />
+        <Property name="Toxic" value="0" />
+        <Property name="Scorched" value="1" />
+        <Property name="Radioactive" value="0" />
+        <Property name="RedWeather" value="0" />
+        <Property name="GreenWeather" value="0" />
+        <Property name="BlueWeather" value="0" />
+        <Property name="Swamp" value="0" />
+        <Property name="Lava" value="0" />
+        <Property name="Bubble" value="0" />
+        <Property name="Weird" value="0" />
+        <Property name="Fire" value="1" />
+        <Property name="ClearCold" value="0" />
+      </Property>
+    </Property>
+    <Property name="Blue" value="GcWeatherWeightings.xml">
+      <Property name="WeatherWeightings">
+        <Property name="Clear" value="0" />
+        <Property name="Dust" value="0" />
+        <Property name="Humid" value="0" />
+        <Property name="Snow" value="0" />
+        <Property name="Toxic" value="0" />
+        <Property name="Scorched" value="1" />
+        <Property name="Radioactive" value="0" />
+        <Property name="RedWeather" value="0" />
+        <Property name="GreenWeather" value="0" />
+        <Property name="BlueWeather" value="0" />
+        <Property name="Swamp" value="0" />
+        <Property name="Lava" value="0" />
+        <Property name="Bubble" value="0" />
+        <Property name="Weird" value="0" />
+        <Property name="Fire" value="1" />
+        <Property name="ClearCold" value="0" />
+      </Property>
+    </Property>
+    <Property name="Red" value="GcWeatherWeightings.xml">
+      <Property name="WeatherWeightings">
+        <Property name="Clear" value="0" />
+        <Property name="Dust" value="0" />
+        <Property name="Humid" value="0" />
+        <Property name="Snow" value="0" />
+        <Property name="Toxic" value="0" />
+        <Property name="Scorched" value="1" />
+        <Property name="Radioactive" value="0" />
+        <Property name="RedWeather" value="0" />
+        <Property name="GreenWeather" value="0" />
+        <Property name="BlueWeather" value="0" />
+        <Property name="Swamp" value="0" />
+        <Property name="Lava" value="0" />
+        <Property name="Bubble" value="0" />
+        <Property name="Weird" value="0" />
+        <Property name="Fire" value="1" />
+        <Property name="ClearCold" value="0" />
+      </Property>
+    </Property>
+    <Property name="Purple" value="GcWeatherWeightings.xml">
+      <Property name="WeatherWeightings">
+        <Property name="Clear" value="0" />
+        <Property name="Dust" value="0" />
+        <Property name="Humid" value="0" />
+        <Property name="Snow" value="0" />
+        <Property name="Toxic" value="0" />
+        <Property name="Scorched" value="1" />
+        <Property name="Radioactive" value="0" />
+        <Property name="RedWeather" value="0" />
+        <Property name="GreenWeather" value="0" />
+        <Property name="BlueWeather" value="0" />
+        <Property name="Swamp" value="0" />
+        <Property name="Lava" value="0" />
+        <Property name="Bubble" value="0" />
+        <Property name="Weird" value="0" />
+        <Property name="Fire" value="1" />
+        <Property name="ClearCold" value="0" />
+      </Property>
+    </Property>
+  </Property>
+  <Property name="WeatherChangeTime" value="Vector2f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
+  </Property>
+  <Property name="DarknessVariation" value="0.4" />
+  <Property name="CloudSettings" value="GcBiomeCloudSettings.xml">
+    <Property name="MinCoverage" value="0.2" />
+    <Property name="MaxCoverage" value="0.6" />
+    <Property name="MinCoverageVariance" value="0" />
+    <Property name="MaxCoverageVariance" value="0.4" />
+    <Property name="MinCover" value="-0.6" />
+    <Property name="MaxCover" value="0.6" />
+    <Property name="MinVariance" value="0" />
+    <Property name="MaxVariance" value="0.6" />
+    <Property name="MinRateOfChange" value="0.05" />
+    <Property name="MaxRateOfChange" value="1.25" />
+    <Property name="MinRatio" value="1" />
+    <Property name="MaxRatio" value="1" />
+    <Property name="TendencyTowardsBeingCloudy" value="0.5" />
+    <Property name="StormCloudTopColour" value="Colour.xml">
+      <Property name="R" value="0.05" />
+      <Property name="G" value="0.05" />
+      <Property name="B" value="0.05" />
+      <Property name="A" value="1" />
+    </Property>
+    <Property name="StormCloudBottomColour" value="Colour.xml">
+      <Property name="R" value="0.05" />
+      <Property name="G" value="0.05" />
+      <Property name="B" value="0.05" />
+      <Property name="A" value="1" />
+    </Property>
+  </Property>
+  <Property name="Terrain" value="GcTerrainControls.xml">
+    <Property name="NoiseLayers">
+      <Property name="Base" value="1" />
+      <Property name="Hill" value="1" />
+      <Property name="Mountain" value="1" />
+      <Property name="Rock" value="1" />
+      <Property name="UnderWater" value="1" />
+      <Property name="Texture" value="0" />
+      <Property name="Elevation" value="1" />
+      <Property name="Continent" value="0" />
+    </Property>
+    <Property name="GridLayers">
+      <Property name="Small" value="0.75" />
+      <Property name="Large" value="0.75" />
+      <Property name="Resources_Heridium" value="1" />
+      <Property name="Resources_Iridium" value="1" />
+      <Property name="Resources_Copper" value="1" />
+      <Property name="Resources_Nickel" value="0" />
+      <Property name="Resources_Aluminium" value="0" />
+      <Property name="Resources_Gold" value="0" />
+      <Property name="Resources_Emeril" value="0" />
+    </Property>
+    <Property name="Features">
+      <Property name="River" value="1" />
+      <Property name="Crater" value="1" />
+      <Property name="Arches" value="1" />
+      <Property name="ArchesSmall" value="1" />
+      <Property name="Blobs" value="1" />
+      <Property name="BlobsSmall" value="1" />
+      <Property name="Substance" value="0" />
+    </Property>
+    <Property name="Caves">
+      <Property name="Underground" value="1" />
+    </Property>
+    <Property name="WaterActiveFrequency" value="0.3" />
+    <Property name="HighWaterActiveFrequency" value="0" />
+    <Property name="RockTileFrequency" value="0.25" />
+    <Property name="SubstanceTileFrequency" value="0.25" />
+    <Property name="ForceContinentalNoise" value="False" />
+  </Property>
+  <Property name="FilterOptions">
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="Scorched" />
+      </Property>
+      <Property name="Weight" value="2" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="ScorchedStorm" />
+      </Property>
+      <Property name="Weight" value="0.33" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="Vintage" />
+      </Property>
+      <Property name="Weight" value="0.33" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="Weird8" />
+      </Property>
+      <Property name="Weight" value="0.025" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="Weird7" />
+      </Property>
+      <Property name="Weight" value="0.025" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="NewVibrantWarm" />
+      </Property>
+      <Property name="Weight" value="0.05" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="HueShiftA" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="HueShiftB" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="NMSRetroE" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="NMSRetroF" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="Red" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+    <Property value="GcScreenFilterOption.xml">
+      <Property name="Filter" value="GcScreenFilters.xml">
+        <Property name="ScreenFilter" value="SepiaExtreme" />
+      </Property>
+      <Property name="Weight" value="0.01" />
+    </Property>
+  </Property>
+  <Property name="FloraLifeLocID" value="" />
+</Data>
